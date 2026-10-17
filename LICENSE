@@ -1,0 +1,71 @@
+AIMLab Website — Proprietary License
+
+Copyright (c) 2026 Chen-MouChin (https://github.com/Chen-MouChin). All rights reserved.
+Admin Component: Copyright (c) 2026 Chen-MouChin and Hsu-Cheng Wu (https://github.com/wuxuchengee14).
+All rights reserved.
+
+This repository contains the source code, design, stylesheets, scripts, data
+schemas, interactive demos and illustrations of the AI in Medicine Lab (AIMLab)
+website (the "Work").
+
+The "Admin Component" is the admin panel and the local content server:
+admin/, server.js, routes/, middleware/ and scripts/. It was co-developed and is
+maintained by Chen-MouChin (Meng-Ching Chen) and Hsu-Cheng Wu (AIMLab CAG
+Program). Hsu-Cheng Wu built its original foundation: the Express server, login
+and token authentication, the data API, the Vue admin panel and its validators.
+The Admin Component is jointly owned by Chen-MouChin and Hsu-Cheng Wu.
+
+The rest of the Work is the original creation of Chen-MouChin, who holds all
+copyright and economic rights in it.
+
+In this licence, "Author" means Chen-MouChin for the Work as a whole and, for
+the Admin Component, Chen-MouChin and Hsu-Cheng Wu jointly.
+
+1. Limited licence to AIMLab
+   The Author grants the AI in Medicine Lab, National Yang Ming Chiao Tung
+   University ("AIMLab") a non-exclusive, non-transferable, royalty-free licence
+   to host, display, and make reasonable modifications to the Work solely for
+   the purpose of operating AIMLab's official laboratory website. This licence
+   may be revoked by the Author with 30 days' written notice. For the Admin
+   Component, a revocation or any permission under Section 3 requires the
+   written agreement of both of its co-owners.
+
+2. Attribution
+   The attribution "Site designed & built by Chen-MouChin" and this LICENSE file
+   must be kept intact in every deployed copy and every fork of the Work. The
+   admin panel's credit line naming Hsu-Cheng Wu and Meng-Ching Chen must be
+   kept intact in every copy of the Admin Component.
+
+3. Restrictions
+   Except as permitted in Section 1, no part of the Work may be copied,
+   redistributed, sublicensed, sold, used commercially, or used as the basis of
+   another website, template, or product without the prior written permission
+   of the Author. Removing or altering the attribution is prohibited.
+
+4. Laboratory content
+   Textual content describing AIMLab (research descriptions, publications,
+   member profiles, news) that is entered into the JSON data files by AIMLab
+   members remains the property of its respective authors and is not covered by
+   this licence.
+
+5. Third-party components
+   The following components are included under their own licences, which take
+   precedence for those components:
+   - MediaPipe canonical face model vertex and triangle data
+     (js/face-mesh-data.js): Apache License 2.0, Google LLC.
+   - Facial-region rPPG signal-strength ranking (js/face-mesh-data.js):
+     after Li, Elgendi, Zhu, Lam & Menon (2026), npj Cardiovascular Health,
+     CC BY 4.0.
+   - Chart.js (loaded from CDN): MIT License.
+   - Plus Jakarta Sans (Google Fonts): SIL Open Font License 1.1.
+   - Express, bcryptjs, Vue, Vite and other npm packages: see their respective
+     package licences.
+
+6. No warranty
+   THE WORK IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES OR
+   OTHER LIABILITY ARISING FROM THE USE OF THE WORK.
+
+For permissions beyond the scope of this licence, contact the Author via
+https://github.com/Chen-MouChin. Permissions concerning the Admin Component also
+require the agreement of Hsu-Cheng Wu (https://github.com/wuxuchengee14).

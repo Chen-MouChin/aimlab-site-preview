@@ -1,0 +1,30 @@
+[
+  {
+    "id": "mer2026-silver",
+    "kind": "award",
+    "date": "2026-07",
+    "kicker": "Award · ACM Multimedia 2026",
+    "kicker_zh": "獎項 · ACM Multimedia 2026",
+    "title": "2nd place, MER 2026 Emotion Preference Challenge",
+    "title_zh": "MER 2026 情緒偏好挑戰賽第二名",
+    "detail": "Multimodal emotion recognition from conversational video: text, voice and facial expression fused utterance by utterance.",
+    "detail_zh": "從對話影片辨識多模態情緒：逐句融合文字、語音與臉部表情。",
+    "who": "Meng-Ching Chen, Xin-You Song, Sheng-Bi Chen",
+    "program": "mllm",
+    "tone": "silver",
+    "link": "https://zeroqiaoba.github.io/MER-Challenge/"
+  },
+  {
+    "id": "sympo-2026",
+    "kind": "paper",
+    "date": "2026-11",
+    "kicker": "Paper · MRAC Workshop @ ACM Multimedia 2026",
+    "kicker_zh": "論文 · MRAC Workshop @ ACM Multimedia 2026",
+    "title": "SymPO: Consistency by Construction via Permutation Symmetry for Preference Optimization",
+    "title_zh": "SymPO：以置換對稱性在偏好最佳化中建構一致性",
+    "detail": "Accepted at the MRAC Workshop of ACM Multimedia 2026. A preference-optimization method that makes ranking consistency a property of the model by construction.",
+    "detail_zh": "獲 ACM Multimedia 2026 MRAC Workshop 接受。一種讓排序一致性成為模型本身性質的偏好最佳化方法。",
+    "who": "Meng-Ching Chen, Xin-You Song, Sheng-Bi Chen, Chia-Yen Lee",
+    "program": "mllm"
+  }
+]

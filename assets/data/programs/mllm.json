@@ -1,0 +1,74 @@
+{
+  "_readme": "Detail data for program.html?id=mllm. Concept-level public text drafted from internal reference material: no datasets, numbers, model names, partner sites or internal system names.",
+  "id": "mllm",
+  "track": "frontier",
+  "hero": {
+    "label": "Frontier AI · MLLM Program",
+    "label_zh": "Frontier AI · MLLM 計畫",
+    "title": "MLLM Program",
+    "title_zh": "MLLM 計畫",
+    "subtitle": "Multimodal language models for emotion-aware, empathic care",
+    "subtitle_zh": "理解情緒、同理回應的多模態語言模型",
+    "tagline": "Models that listen to what a person says, how they say it and what their face shows, and answer with empathy in the person’s own language.",
+    "tagline_zh": "聽懂一個人說了什麼、怎麼說、臉上又透露了什麼，並用對方自己的語言給予有同理心的回應。",
+    "badges": [
+      "Multimodal LLM",
+      "Emotion AI",
+      "Empathic Generation",
+      "Chinese Context",
+      "Physiology-aware"
+    ]
+  },
+  "overview": {
+    "summary": "The MLLM Program builds multimodal language models for care conversations. One line of work recognizes emotion from conversational video by fusing text, voice and facial expression utterance by utterance, and is designed to keep working when the real world is noisier than the benchmark. The other turns that understanding into empathic, culturally grounded responses for Chinese-speaking users, and connects it with contactless physiology from the rPPG Program.",
+    "summary_zh": "MLLM 計畫為照護對話打造多模態語言模型。一條主線是從對話影片辨識情緒：逐句融合文字、語音與臉部表情，並且在真實世界比基準資料集更吵雜時仍能運作。另一條主線把這份理解轉成給華語使用者的、有文化根基的同理回應，並與 rPPG 計畫的非接觸式生理訊號連結。",
+    "focus": [
+      "Multimodal emotion recognition in conversation: text, voice and facial expression fused for each utterance, following the dialogue as it unfolds.",
+      "Robustness to missing or degraded modalities, so a noisy room or a covered camera degrades gracefully instead of breaking the system.",
+      "Honest evaluation: pre-registered protocols, calibrated confidence, and comparisons only under identical conditions.",
+      "Empathic response generation for Chinese-speaking users, grounded in cultural context and verified health knowledge.",
+      "Physiology-aware interaction: combining contactless signals from the rPPG Program with emotional cues to understand a person’s state.",
+      "Local, privacy-preserving deployment: compact models that run on ordinary hardware so that video never leaves the device."
+    ],
+    "focus_zh": [
+      "對話中的多模態情緒辨識：逐句融合文字、語音與臉部表情，跟著對話的進展理解情緒。",
+      "對缺失或劣化模態的強健性：吵雜的房間或被遮住的鏡頭只會讓系統效能平緩下降，而不是整個失效。",
+      "誠實的評估：預先登錄的實驗流程、經過校準的信心值，以及只在相同條件下做比較。",
+      "給華語使用者的同理回應生成，以文化脈絡與經過查證的健康知識為基礎。",
+      "生理感知互動：結合 rPPG 計畫的非接觸訊號與情緒線索，理解一個人的狀態。",
+      "本機、保護隱私的部署：在一般硬體上執行的精簡模型，影像永遠不離開裝置。"
+    ],
+    "lead": "Xin-You Song",
+    "members": [
+      "Xin-You Song",
+      "You-Chen Li",
+      "Meng-Ching Chen"
+    ]
+  },
+  "team": [
+    "Xin-You Song",
+    "You-Chen Li",
+    "Meng-Ching Chen"
+  ],
+  "related": [
+    "rppg"
+  ],
+  "method": {
+    "title": "Why it matters",
+    "title_zh": "為什麼重要",
+    "paragraphs": [
+      "In a care conversation, emotion lives in the words, the tone of voice and the face at the same time. A system that reads only one of them misjudges people, and systems tuned on clean public benchmarks often fail in a ward or a living room, where speech is quiet, lighting is poor and a modality can disappear mid-sentence.",
+      "Our research therefore treats robustness and honesty as first-class goals: models are trained to cope with missing or degraded inputs, to express calibrated confidence rather than false certainty, and to be evaluated under protocols fixed before the results are seen. Streaming, per-utterance processing lets the model follow a dialogue as it happens.",
+      "Within AIMLab, the MLLM Program is the reasoning and dialogue layer of human-centered care AI. Combined with contactless physiology from the rPPG Program, it works toward companions and care-support systems that understand how a person feels and respond with grounded empathy in their own language. These directions are ongoing, forward-looking research."
+    ],
+    "paragraphs_zh": [
+      "在照護對話裡，情緒同時存在於話語、語氣和表情之中。只讀其中一種的系統會誤判人；而在乾淨的公開基準上調校的系統，到了病房或客廳常常失靈——那裡說話很輕、光線很差，而且某個模態可能在句子中途就消失。",
+      "因此我們的研究把強健與誠實放在第一位：模型被訓練來應付缺失或劣化的輸入、表達經過校準的信心而不是假裝確定，並在看到結果之前就固定評估流程。串流式、逐句的處理讓模型能即時跟上對話。",
+      "在 AIMLab 中，MLLM 計畫是以人為本照護 AI 的推理與對話層。結合 rPPG 計畫的非接觸式生理訊號，它朝向能理解一個人的感受、並以對方的語言給予有根據的同理回應的陪伴與照護支援系統前進。這些方向都是進行中、面向未來的研究。"
+    ]
+  },
+  "publications": [
+    "SymPO",
+    "EmoRecog-Net"
+  ]
+}

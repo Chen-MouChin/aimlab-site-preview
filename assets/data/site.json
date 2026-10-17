@@ -1,0 +1,16 @@
+{
+  "_readme": "Lab-level settings for the public site. founded: the year AIMLab started (number) or null to hide the Years Active stat. publications: which years of papers are public ({\"mode\": \"all\"} | {\"mode\": \"since\", \"since\": 2020} | {\"mode\": \"recent\", \"recent\": 5}). effects: visual flourishes; each one is off unless true (smooth_wheel: damped mouse-wheel scrolling on desktop). Editable from the admin panel under 網站設定.",
+  "founded": null,
+  "publications": {
+    "mode": "since",
+    "since": 2020
+  },
+  "effects": {
+    "spotlight_ring": false,
+    "lead_ring": true,
+    "phd_gold": true,
+    "pi_platinum": false,
+    "pi_title_shine": false,
+    "smooth_wheel": true
+  }
+}

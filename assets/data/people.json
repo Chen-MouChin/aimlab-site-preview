@@ -1,0 +1,341 @@
+{
+  "pi": {
+    "name": "Chia-Yen Lee",
+    "name_zh": "李佳燕",
+    "title": "Associate Professor",
+    "title_zh": "副教授",
+    "group": "Institute of Intelligent Bioelectrical Engineering (IBE)",
+    "group_zh": "智慧醫電工程研究所",
+    "affiliation": "National Yang Ming Chiao Tung University (NYCU)",
+    "affiliation_zh": "國立陽明交通大學",
+    "office": "Engineering Building 6, Room 466 (EF466)",
+    "office_zh": "工程六館 466 室（EF466）",
+    "phone": "+886-3-5731750",
+    "email": "chiayenlee@nycu.edu.tw",
+    "photo": "assets/img/people/chia-yen-lee.png",
+    "expertise": [
+      "Smart Healthcare",
+      "Learning- and AI-aided Diagnosis Systems",
+      "Medical Image Processing and Analysis",
+      "Medical Device Design and Development",
+      "Machine Learning and Deep Learning Model Development",
+      "Applications of Computer Vision Technology",
+      "Home Care"
+    ],
+    "expertise_zh": [
+      "智慧醫療",
+      "學習與 AI 輔助診斷系統",
+      "醫學影像處理與分析",
+      "醫療器材設計與開發",
+      "機器學習與深度學習模型開發",
+      "電腦視覺技術應用",
+      "居家照護"
+    ],
+    "awards": [
+      {
+        "year": 2023,
+        "title": "20th National Innovation Award",
+        "title_zh": "第 20 屆國家新創獎",
+        "category": "Academic Innovation",
+        "category_zh": "學研新創獎",
+        "project": "Ki-67 Auto-Scoring Model",
+        "project_zh": "Ki-67 自動判讀模型",
+        "role": "PI",
+        "note": "",
+        "note_zh": "",
+        "link": "https://innoaward.taiwan-healthcare.org/award_detail.php?REFDOCID=0s6o31czj9wm018p&REFDOCTYPID=0r4ggllnka0x43sh&num=1"
+      },
+      {
+        "year": 2022,
+        "title": "19th National Innovation Award",
+        "title_zh": "第 19 屆國家新創獎",
+        "category": "Academic Innovation",
+        "category_zh": "學研新創獎",
+        "project": "TruePlaque-Net",
+        "project_zh": "",
+        "role": "Co-PI",
+        "note": "AI model development",
+        "note_zh": "AI 模型開發",
+        "link": "https://innoaward.taiwan-healthcare.org/award_detail.php?REFDOCID=0rn6irkl33vakdvi"
+      },
+      {
+        "year": 2021,
+        "title": "18th National Innovation Award",
+        "title_zh": "第 18 屆國家新創獎",
+        "category": "Academic Innovation",
+        "category_zh": "學研新創獎",
+        "project": "TaiCAD-Net",
+        "project_zh": "",
+        "role": "Co-PI",
+        "note": "AI model development",
+        "note_zh": "AI 模型開發",
+        "link": "https://innoaward.taiwan-healthcare.org/award_detail.php?REFDOCID=0r4r6dyav7nxl3ih&REFDOCTYPID=0r4ggllnka0x43sh&num=1"
+      }
+    ],
+    "field": "Artificial Intelligence and Computer Engineering",
+    "links": {
+      "nycu_scholar": "https://scholar.nycu.edu.tw/zh/persons/chia-yen-lee/",
+      "department_profile": "https://dee.nycu.edu.tw/teachers.php?locale=en&pa=getItem&teacher_id=515",
+      "ibe_profile": "https://www.nycu.edu.tw/ibe/ch/app/artwebsite/view?id=6791&module=artwebsite&serno=8704e68e-d00b-4805-90a8-514d5ecf316f",
+      "orcid": "https://orcid.org/0000-0002-7477-782X"
+    }
+  },
+  "members": [
+    {
+      "name": "Xin-Di Ma",
+      "role": "PhD Student",
+      "photo": "assets/img/avatar.svg",
+      "interests": [],
+      "links": {
+        "email": "",
+        "github": "",
+        "scholar": ""
+      },
+      "entry_year": 114,
+      "cohort": 1,
+      "groups": [
+        "Frontier AI"
+      ],
+      "lead_of": [
+        "Frontier AI"
+      ]
+    },
+    {
+      "name": "Yu-Hsuan Chiu",
+      "role": "Master Student",
+      "photo": "assets/img/avatar.svg",
+      "interests": [],
+      "links": {
+        "email": "",
+        "github": "",
+        "scholar": ""
+      },
+      "entry_year": 115,
+      "cohort": 2,
+      "groups": [
+        "Liver-US"
+      ],
+      "lead_of": []
+    },
+    {
+      "name": "Yu-Fang Tseng",
+      "role": "Master Student",
+      "photo": "assets/img/avatar.svg",
+      "interests": [],
+      "links": {
+        "email": "",
+        "github": "",
+        "scholar": ""
+      },
+      "entry_year": 115,
+      "cohort": 2,
+      "groups": [
+        "Frontier AI",
+        "rPPG"
+      ],
+      "lead_of": []
+    },
+    {
+      "name": "Cheng-Fang Han",
+      "role": "Master Student",
+      "photo": "assets/img/avatar.svg",
+      "interests": [],
+      "links": {
+        "email": "",
+        "github": "",
+        "scholar": ""
+      },
+      "entry_year": 115,
+      "cohort": 2,
+      "groups": [
+        "Frontier AI"
+      ],
+      "lead_of": []
+    },
+    {
+      "name": "Li-Kai Chen",
+      "role": "Master Student",
+      "photo": "assets/img/avatar.svg",
+      "interests": [],
+      "links": {
+        "email": "",
+        "github": "",
+        "scholar": ""
+      },
+      "entry_year": 115,
+      "cohort": 2,
+      "groups": [
+        "CAG"
+      ],
+      "lead_of": []
+    },
+    {
+      "name": "Yu-Hao Liu",
+      "role": "Master Student",
+      "photo": "assets/img/avatar.svg",
+      "interests": [],
+      "links": {
+        "email": "",
+        "github": "",
+        "scholar": ""
+      },
+      "entry_year": 115,
+      "cohort": 2,
+      "groups": [
+        "CAG"
+      ],
+      "lead_of": [
+        "CAG"
+      ]
+    },
+    {
+      "name": "Xin-You Song",
+      "role": "Master Student",
+      "photo": "assets/img/avatar.svg",
+      "interests": [],
+      "links": {
+        "email": "songxinyou.ee14@nycu.edu.tw",
+        "github": "https://github.com/xinyou1220",
+        "scholar": ""
+      },
+      "entry_year": 114,
+      "cohort": 1.5,
+      "groups": [
+        "Frontier AI",
+        "MLLM"
+      ],
+      "lead_of": [
+        "MLLM"
+      ]
+    },
+    {
+      "name": "Meng-Ching Chen",
+      "role": "Master Student",
+      "photo": "assets/img/avatar.svg",
+      "interests": [],
+      "links": {
+        "email": "cmc.ee13@nycu.edu.tw",
+        "github": "https://github.com/Chen-MouChin",
+        "scholar": ""
+      },
+      "entry_year": 114,
+      "cohort": 1,
+      "groups": [
+        "Frontier AI",
+        "rPPG",
+        "MLLM"
+      ],
+      "lead_of": [
+        "rPPG"
+      ]
+    },
+    {
+      "name": "Hsu-Cheng Wu",
+      "role": "Master Student",
+      "photo": "assets/img/avatar.svg",
+      "interests": [],
+      "links": {
+        "email": "",
+        "github": "https://github.com/wuxuchengee14",
+        "scholar": ""
+      },
+      "entry_year": 114,
+      "cohort": 1,
+      "groups": [
+        "CAG"
+      ],
+      "lead_of": []
+    },
+    {
+      "name": "Chih-Kai Ku",
+      "role": "Master Student",
+      "photo": "assets/img/avatar.svg",
+      "interests": [],
+      "links": {
+        "email": "",
+        "github": "",
+        "scholar": ""
+      },
+      "entry_year": 114,
+      "cohort": 1,
+      "groups": [
+        "Liver-US"
+      ],
+      "lead_of": []
+    },
+    {
+      "name": "Chun-Chia Ku",
+      "role": "Master Student",
+      "photo": "assets/img/avatar.svg",
+      "interests": [],
+      "links": {
+        "email": "",
+        "github": "",
+        "scholar": ""
+      },
+      "entry_year": 114,
+      "cohort": 1,
+      "groups": [
+        "CAG"
+      ],
+      "lead_of": []
+    },
+    {
+      "name": "You-Chen Li",
+      "role": "Master Student",
+      "photo": "assets/img/avatar.svg",
+      "interests": [],
+      "links": {
+        "email": "",
+        "github": "",
+        "scholar": ""
+      },
+      "entry_year": 114,
+      "cohort": 1,
+      "groups": [
+        "Frontier AI",
+        "MLLM"
+      ],
+      "lead_of": []
+    },
+    {
+      "name": "Sheng-Bi Chen",
+      "role": "Master Student",
+      "photo": "assets/img/avatar.svg",
+      "interests": [],
+      "links": {
+        "email": "shengbi.ee13@nycu.edu.tw",
+        "github": "https://github.com/Yuann4",
+        "scholar": ""
+      },
+      "entry_year": 114,
+      "cohort": 1,
+      "groups": [
+        "Frontier AI",
+        "rPPG"
+      ],
+      "lead_of": []
+    }
+  ],
+  "alumni": [
+    {
+      "year": "2026",
+      "name": "Hsiang-Chin Chien",
+      "degree": "PhD",
+      "current": ""
+    },
+    {
+      "year": "2025",
+      "name": "Ching-Ping Wang",
+      "degree": "PhD",
+      "current": ""
+    },
+    {
+      "year": "",
+      "name": "Hao-Jen Wang",
+      "degree": "",
+      "current": ""
+    }
+  ],
+  "_readme": "members: role (PhD Student / Master Student / Research Assistant / Undergraduate), entry_year (ROC year), cohort (lab generation), groups (Frontier AI track badge plus rPPG / MLLM / CAG / Liver-US) and lead_of drive the sorting, badges and filters on people.html. Order: degree (PhD before Master), program leads, earlier entry_year, earlier cohort, name A-Z."
+}

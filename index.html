@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-zh="人工智慧醫學實驗室 | 國立陽明交通大學">AIMLab | Artificial Intelligence in Medicine</title>
+  <meta name="description" content="AIMLab at NYCU builds AI for medicine that people can trust: contactless physiological sensing from face video (rPPG), multimodal language models for emotion-aware care, and AI reading of coronary angiography.">
+  <link rel="canonical" href="https://chen-mouchin.github.io/aimlab-site-preview/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="AIMLab">
+  <meta property="og:title" content="AIMLab | Artificial Intelligence in Medicine">
+  <meta property="og:description" content="AIMLab at NYCU builds AI for medicine that people can trust: contactless physiological sensing from face video (rPPG), multimodal language models for emotion-aware care, and AI reading of coronary angiography.">
+  <meta property="og:url" content="https://chen-mouchin.github.io/aimlab-site-preview/">
+  <meta property="og:image" content="https://chen-mouchin.github.io/aimlab-site-preview/assets/img/lab/og-cover.png?v=2">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/img/lab/favicon-192.png">
+  <link rel="apple-touch-icon" href="assets/img/lab/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Noto+Sans+TC:wght@400;500;700;900&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="js/i18n.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">
+        <img src="assets/img/lab/aimlab_logo.png" alt="AIMLab logo">
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="programs.html"><span class="t-en">Programs</span><span class="t-zh">研究計畫</span></a></li>
+        <li><a href="publications.html"><span class="t-en">Publications</span><span class="t-zh">論文</span></a></li>
+        <li><a href="people.html"><span class="t-en">People</span><span class="t-zh">成員</span></a></li>
+        <li><a href="news.html"><span class="t-en">News</span><span class="t-zh">最新消息</span></a></li>
+        <li><a href="join.html"><span class="t-en">Join Us</span><span class="t-zh">加入我們</span></a></li>
+      </ul>
+      <div class="nav-tools">
+        <div class="lang-toggle" role="group" aria-label="Language">
+          <button type="button" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" data-lang="zh" aria-pressed="false">中文</button>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-controls="navLinks" aria-expanded="false">
+          ☰ <span class="t-en">Menu</span><span class="t-zh">選單</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+
+    <!-- Animated background layer -->
+    <div class="hero-bg" aria-hidden="true">
+      <div class="hero-orb hero-orb--1"></div>
+      <div class="hero-orb hero-orb--2"></div>
+      <div class="hero-orb hero-orb--3"></div>
+      <svg class="hero-grid" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="hero-dot-grid" x="0" y="0" width="28" height="28" patternUnits="userSpaceOnUse">
+            <circle cx="1.5" cy="1.5" r="1.5" fill="rgba(11,91,211,0.15)"/>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#hero-dot-grid)"/>
+      </svg>
+    </div>
+
+    <!-- Content layer -->
+    <div class="hero-content">
+
+      <div class="hero-label fade-up" style="--delay:0ms">
+        <span class="hero-label-dot"></span>
+        <span class="t-en">NYCU &middot; Institute of Intelligent Bioelectrical Engineering</span><span class="t-zh">國立陽明交通大學 &middot; 智慧醫電工程研究所</span>
+      </div>
+
+      <h1 class="fade-up" style="--delay:100ms">
+        <span class="t-en">Artificial Intelligence</span><span class="t-zh">人工智慧</span><br>
+        <span class="hero-title-accent"><span class="t-en">in Medicine Lab</span><span class="t-zh">醫學實驗室</span></span>
+      </h1>
+
+      <p class="hero-desc fade-up" style="--delay:210ms">
+        <span class="t-en">We build AI for medicine that people can trust: contactless physiological sensing with an ordinary camera,
+        multimodal language models that understand how a person feels, and decision support that reads
+        coronary angiograms the way cardiologists do.</span><span class="t-zh">我們打造人們能信任的醫療 AI：用一般攝影機做非接觸式生理量測、能理解人的情緒的多模態語言模型，以及像心臟科醫師一樣判讀冠狀動脈攝影的決策支援。</span>
+      </p>
+
+      <div class="hero-badges fade-up" style="--delay:320ms">
+        <span class="badge"><span class="t-en">Contactless Sensing</span><span class="t-zh">非接觸式感測</span></span>
+        <span class="badge"><span class="t-en">Multimodal LLMs</span><span class="t-zh">多模態語言模型</span></span>
+        <span class="badge green"><span class="t-en">Clinical Decision Support</span><span class="t-zh">臨床決策支援</span></span>
+      </div>
+
+      <!-- Stats card: numbers are computed from the data files by initHeroStats() -->
+      <div class="hero-stats fade-up" style="--delay:450ms" hidden>
+        <div class="stat-item" data-stat="publications">
+          <div class="stat-value"><span class="stat-num" data-target="0">0</span><span class="stat-suffix"></span></div>
+          <div class="stat-label"><span class="t-en">Publications</span><span class="t-zh">論文</span></div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item" data-stat="members">
+          <div class="stat-value"><span class="stat-num" data-target="0">0</span><span class="stat-suffix"></span></div>
+          <div class="stat-label"><span class="t-en">Members</span><span class="t-zh">成員</span></div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item" data-stat="years">
+          <div class="stat-value"><span class="stat-num" data-target="0">0</span><span class="stat-suffix"></span></div>
+          <div class="stat-label"><span class="t-en">Years Active</span><span class="t-zh">成立年數</span></div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item" data-stat="programs">
+          <div class="stat-value"><span class="stat-num" data-target="0">0</span><span class="stat-suffix"></span></div>
+          <div class="stat-label"><span class="t-en">Programs</span><span class="t-zh">計畫</span></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Spotlight: awards and accepted papers -->
+  <section class="hl-band" id="home-highlights-section" aria-label="Recent achievements" hidden>
+    <div class="container">
+      <div class="pg-track-label fade-up"><span class="pg-track-dot"></span><span class="t-en">Spotlight</span><span class="t-zh">焦點</span></div>
+      <h2 class="hl-heading fade-up" style="--delay:80ms"><span class="t-en">Recent achievements</span><span class="t-zh">近期成果</span></h2>
+      <div id="highlights-container" class="hl-grid fade-up" style="--delay:160ms"></div>
+    </div>
+  </section>
+
+  <div class="container">
+    <h2 class="section-title"><span class="t-en">Research Programs</span><span class="t-zh">研究計畫</span></h2>
+    <div id="programs-container" class="grid"></div>
+
+    <hr>
+
+    <div class="home-news">
+      <h2 class="section-title"><span class="t-en">Latest News</span><span class="t-zh">最新消息</span></h2>
+      <div id="news-container" data-limit="5"></div>
+      <div class="card-actions">
+        <a class="pill pill--plain" href="news.html"><span class="t-en">All News →</span><span class="t-zh">所有消息 →</span></a>
+        <a class="pill pill--plain" href="publications.html"><span class="t-en">Publications →</span><span class="t-zh">論文 →</span></a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <!-- Footer navigation. The Programs list is rewritten from programs.json by main.js (hidden programs drop out). -->
+    <div class="footer-inner">
+      <nav class="footer-nav" aria-label="Footer">
+        <div class="footer-col">
+          <h2 class="footer-h"><span class="t-en">Pages</span><span class="t-zh">頁面</span></h2>
+          <ul>
+          <li><a href="index.html"><span class="t-en">Home</span><span class="t-zh">首頁</span></a></li>
+          <li><a href="programs.html"><span class="t-en">Programs</span><span class="t-zh">研究計畫</span></a></li>
+          <li><a href="publications.html"><span class="t-en">Publications</span><span class="t-zh">論文</span></a></li>
+          <li><a href="people.html"><span class="t-en">People</span><span class="t-zh">成員</span></a></li>
+          <li><a href="news.html"><span class="t-en">News</span><span class="t-zh">最新消息</span></a></li>
+          <li><a href="join.html"><span class="t-en">Join Us</span><span class="t-zh">加入我們</span></a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h2 class="footer-h"><span class="t-en">Research Programs</span><span class="t-zh">研究計畫</span></h2>
+          <ul id="footer-programs">
+          <li><a href="program.html?id=rppg"><span class="t-en">rPPG Program</span><span class="t-zh">非接觸式生理訊號量測</span></a></li>
+          <li><a href="program.html?id=mllm"><span class="t-en">MLLM Program</span><span class="t-zh">多模態情緒理解與同理回應</span></a></li>
+          <li><a href="program.html?id=cag"><span class="t-en">CAG Program</span><span class="t-zh">冠狀動脈攝影 AI 判讀</span></a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h2 class="footer-h"><span class="t-en">Contact</span><span class="t-zh">聯絡</span></h2>
+          <p class="footer-lab"><span class="t-en">AIMLab, National Yang Ming Chiao Tung University</span><span class="t-zh">國立陽明交通大學 人工智慧醫學實驗室</span></p>
+          <p><span class="t-en">Engineering Building 6, Room EF466, 1001 Daxue Rd., East District, Hsinchu City 300, Taiwan</span><span class="t-zh">300 新竹市東區大學路 1001 號 工程六館 EF466</span></p>
+          <p><a href="mailto:chiayenlee@nycu.edu.tw">chiayenlee@nycu.edu.tw</a></p>
+        </div>
+      </nav>
+      <div class="footer-bottom">
+        <p><span class="t-en">&copy; 2026 AIMLab — National Yang Ming Chiao Tung University (NYCU)</span><span class="t-zh">&copy; 2026 人工智慧醫學實驗室 — 國立陽明交通大學</span></p>
+        <p><span class="site-credit"><span class="t-en">Site designed &amp; built by <a href="https://github.com/Chen-MouChin" target="_blank" rel="noopener noreferrer">Chen-MouChin</a> &middot; Site code &amp; design &copy; 2026 Chen-MouChin, all rights reserved</span><span class="t-zh">網站設計與建置：<a href="https://github.com/Chen-MouChin" target="_blank" rel="noopener noreferrer">Chen-MouChin</a> &middot; 網站程式與設計 &copy; 2026 Chen-MouChin，保留所有權利</span></span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/lib.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/face-mesh-data.js"></script>
+  <script src="js/rppg-visuals.js"></script>
+  <script src="js/mllm-visuals.js"></script>
+</body>
+</html>

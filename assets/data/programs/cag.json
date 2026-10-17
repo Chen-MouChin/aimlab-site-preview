@@ -1,0 +1,109 @@
+{
+  "_readme": "Detail data for program.html?id=cag. Concept-level public text drafted from the internal proposal: no hospital or physician names, approvals, data counts, hardware, targets, timeline, model or technique names, and no figures; the pipeline is a generic clinical workflow, not the project method.",
+  "id": "cag",
+  "track": "clinical",
+  "hero": {
+    "label": "Clinical AI · CAG Program",
+    "label_zh": "Clinical AI · CAG 計畫",
+    "title": "CAG Program",
+    "title_zh": "CAG 計畫",
+    "subtitle": "Coronary angiography AI that follows how cardiologists read",
+    "subtitle_zh": "依照心臟科醫師判讀流程的冠狀動脈攝影 AI",
+    "tagline": "From identifying the vessel to locating segments, measuring stenosis and assembling the report: a standardized draft whose every statement can be traced to its evidence, reviewed and signed off by the cardiologist.",
+    "tagline_zh": "從辨識血管、定位節段、量化狹窄到整合報告，產出依據可追溯、由醫師審閱定稿的標準化診斷報告草稿。",
+    "badges": [
+      "CAG",
+      "Medical Imaging",
+      "Clinical AI",
+      "Cardiovascular"
+    ]
+  },
+  "overview": {
+    "summary": "Reading coronary angiograms (CAG) and writing the report depend heavily on experience, take a lot of physician time, and vary from one reader to the next. The CAG Program builds AI that works in the order a cardiologist reads: it identifies the main coronary artery in view, marks each vessel segment by the clinical standard, finds the narrowest point and estimates its severity, then assembles these structured findings into a standardized, guideline-consistent report draft whose statements can be traced to their evidence, for the cardiologist to review and sign off.",
+    "summary_zh": "冠狀動脈攝影（CAG）的判讀與報告撰寫高度仰賴醫師經驗，耗費人力，不同醫師之間的判讀也不易一致。CAG 計畫開發一套依照臨床判讀順序運作的 AI：先辨識影像中的主要冠狀動脈，再依臨床標準標出各血管節段、找出最狹窄處並估計嚴重程度，最後把這些結構化結果整合成符合臨床指引、依據可追溯的標準化報告草稿，交由醫師審閱定稿。",
+    "focus": [
+      "Vessel identification: telling which main coronary artery is in view, including branches that overlap and are hardest to separate.",
+      "Segment localization: marking each vessel segment as defined by the standard clinical scheme.",
+      "Stenosis quantification: finding the narrowest point and estimating its severity objectively.",
+      "Guideline-grounded reporting: a language model that writes the report from clinical guidelines and cites its evidence, reducing medical hallucination.",
+      "Learning from few expert labels: learning reliable features from many clinical images when expert annotation is scarce."
+    ],
+    "focus_zh": [
+      "血管辨識：判斷影像中觀察的是哪一條主要冠狀動脈，包括彼此交疊、最難區分的分支。",
+      "節段定位：依臨床通用的冠狀動脈節段定義，逐段標出血管位置。",
+      "狹窄量化：找出最狹窄的位置，並客觀估計狹窄程度。",
+      "指引約束的報告生成：讓語言模型依據臨床指引撰寫報告並引用依據，降低醫療幻覺。",
+      "少量標註也能學習：在專家標註有限的情況下，仍能從大量臨床影像中學到可靠的特徵。"
+    ],
+    "lead": "Yu-Hao Liu",
+    "members": [
+      "Yu-Hao Liu",
+      "Chun-Chia Ku",
+      "Hsu-Cheng Wu",
+      "Li-Kai Chen"
+    ]
+  },
+  "pipeline": [
+    {
+      "step": "01",
+      "name": "Angiogram",
+      "name_zh": "攝影影像",
+      "desc": "Coronary angiography from the cath lab.",
+      "desc_zh": "心導管室的冠狀動脈攝影。"
+    },
+    {
+      "step": "02",
+      "name": "AI analysis",
+      "name_zh": "AI 分析",
+      "desc": "Runs in the background, without taking physician time.",
+      "desc_zh": "在背景自動進行，不佔用醫師時間。"
+    },
+    {
+      "step": "03",
+      "name": "Structured findings",
+      "name_zh": "結構化結果",
+      "desc": "Intermediate results that can be checked.",
+      "desc_zh": "每一步都有可檢查的中間結果。"
+    },
+    {
+      "step": "04",
+      "name": "Report draft",
+      "name_zh": "報告草稿",
+      "desc": "A standardized, guideline-consistent draft.",
+      "desc_zh": "符合臨床指引的標準化草稿。"
+    },
+    {
+      "step": "05",
+      "name": "Cardiologist review",
+      "name_zh": "醫師審閱",
+      "desc": "Reviewed, edited and signed off by the cardiologist.",
+      "desc_zh": "由醫師審閱、修改並定稿。"
+    }
+  ],
+  "method": {
+    "title": "Why it matters",
+    "title_zh": "為什麼重要",
+    "paragraphs": [
+      "In the cath lab, every angiogram has to be read vessel by vessel, its lesions described and a report written. The work is time-consuming and depends on individual experience: the same images read by different cardiologists can be described and graded differently, and reports are hard to standardize.",
+      "Here the language model reasons from clinical guidelines and cites its evidence, so every statement in the report can be traced to its source.",
+      "The system is designed for human-AI collaboration: analysis runs in the background once images are uploaded and produces a structured draft that the cardiologist reviews, edits and signs off, so clinical judgment always stays at the center. Evaluation is planned around clinical facts rather than wording alone, including cardiologists scoring reports without knowing their source. These directions are ongoing, forward-looking research pursued with hospital partners."
+    ],
+    "paragraphs_zh": [
+      "在心導管室，每一次冠狀動脈攝影都要由醫師逐一判讀血管、描述病灶並撰寫報告。這項工作耗時，而且高度依賴個人經驗，同一組影像由不同醫師判讀，描述方式與嚴重度評估都可能不同，報告也難以標準化。",
+      "語言模型在這裡依據臨床指引進行推理、並引用依據，讓報告中的每一句話都追溯得到來源。",
+      "系統設計為人機協作：影像上傳後在背景完成分析，產出結構化報告草稿，由醫師審閱、修改並定稿，醫師的專業判斷始終是決策核心。評估規劃以臨床事實為準，不只比對文字相似度，並由心臟科醫師在不知道來源的情況下評分。這些方向都是進行中、面向未來的研究，並與醫院夥伴共同推動。"
+    ]
+  },
+  "team": [
+    "Yu-Hao Liu",
+    "Chun-Chia Ku",
+    "Hsu-Cheng Wu",
+    "Li-Kai Chen"
+  ],
+  "related": [],
+  "publications": [
+    "Vessel-BloomSeg",
+    "doi:10.1016/j.compmedimag.2022.102049",
+    "doi:10.3390/diagnostics12020390"
+  ]
+}

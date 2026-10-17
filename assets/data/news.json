@@ -1,0 +1,111 @@
+[
+  {
+    "date": "2026-11",
+    "text": "SymPO: Consistency by Construction via Permutation Symmetry for Preference Optimization will be presented at the MRAC Workshop of ACM Multimedia 2026 in Rio de Janeiro (Nov 10–14).",
+    "text_zh": "SymPO: Consistency by Construction via Permutation Symmetry for Preference Optimization 將於 ACM Multimedia 2026 的 MRAC Workshop 發表（里約熱內盧，11 月 10–14 日）。",
+    "links": {
+      "program": "mllm",
+      "site": "https://2026.acmmm.org/site/technical-programme.html"
+    }
+  },
+  {
+    "date": "2026-07",
+    "text": "2nd place in the MER 2026 Emotion Preference Challenge at ACM Multimedia 2026: Meng-Ching Chen, Xin-You Song and Sheng-Bi Chen.",
+    "text_zh": "ACM Multimedia 2026 MER 2026 情緒偏好挑戰賽第二名：Meng-Ching Chen、Xin-You Song、Sheng-Bi Chen。",
+    "links": {
+      "program": "mllm",
+      "site": "https://zeroqiaoba.github.io/MER-Challenge/"
+    }
+  },
+  {
+    "date": "2026-06-10",
+    "text": "AI CUP 2026 table-tennis tactics and outcome prediction challenge: honorable mention for Meng-Ching Chen, Xin-You Song and Chih-Kai Ku.",
+    "text_zh": "AI CUP 2026 桌球戰術與勝負預測競賽：Meng-Ching Chen、Xin-You Song、Chih-Kai Ku 獲佳作。",
+    "links": {
+      "site": "https://www.aicup.tw/_files/ugd/7fbdbf_f5f17a3fa5fc48acb966f7048b64f83f.pdf"
+    }
+  },
+  {
+    "date": "2026-05",
+    "text": "EmoRecog-Net: A Multimodal Framework for Emotion Recognition From fMRI and Physiological Signals is published in IEEE Access.",
+    "text_zh": "EmoRecog-Net: A Multimodal Framework for Emotion Recognition From fMRI and Physiological Signals 刊登於 IEEE Access。",
+    "links": {
+      "paper": "https://doi.org/10.1109/ACCESS.2026.3694984",
+      "program": "mllm"
+    }
+  },
+  {
+    "date": "2026-03-21",
+    "text": "Best Oral at SPRA 2026 (Osaka) for Multi-Scale Feature Learning with Swin Transformer and Hybrid Task Cascade for Robust H&E Cell Analysis: Hsiang-Chin Chien and Ching-Ping Wang.",
+    "text_zh": "SPRA 2026（大阪）最佳口頭報告：Multi-Scale Feature Learning with Swin Transformer and Hybrid Task Cascade for Robust H&E Cell Analysis，Hsiang-Chin Chien、Ching-Ping Wang。",
+    "links": {
+      "paper": "https://doi.org/10.1117/12.3115362",
+      "site": "https://www.spra.org/"
+    }
+  },
+  {
+    "date": "2026-01-10",
+    "text": "Three awards at SEMBA 2026 (Taipei): Excellent oral paper awards for Vessel-BloomSeg (Hsu-Cheng Wu et al.) and CTS-ContextNet (You-Chen Li et al.), and the Best poster award for A Two-Stage Neonatal Model with Multiple Brain Regions (Xin-Di Ma and Sheng-Bi Chen).",
+    "text_zh": "SEMBA 2026（台北）三項獎項：Vessel-BloomSeg（Hsu-Cheng Wu 等）與 CTS-ContextNet（You-Chen Li 等）獲優秀口頭論文獎；A Two-Stage Neonatal Model with Multiple Brain Regions（Xin-Di Ma、Sheng-Bi Chen）獲最佳海報獎。",
+    "links": {
+      "program": "cag",
+      "site": "https://semba2026.conf.tw/site/page.aspx?lang=en&pid=901&sid=1654"
+    }
+  },
+  {
+    "date": "2025-12-09",
+    "text": "AI CUP 2025 cardiac muscle CT segmentation challenge: Yu-Hao Liu, Xin-You Song and You-Chen Li finish in the top tier.",
+    "text_zh": "AI CUP 2025 心肌 CT 分割競賽：Yu-Hao Liu、Xin-You Song、You-Chen Li 名列前段。",
+    "links": {
+      "site": "https://dweb.cjcu.edu.tw/ShepherdFiles/C0404/News/20260203122117448.pdf"
+    }
+  },
+  {
+    "date": "2025-08-13",
+    "text": "Attention-Driven Semantic Segmentation of Liver Parenchyma in Ultrasound Imaging is presented at IEEE AVSS 2025 (Tainan).",
+    "text_zh": "Attention-Driven Semantic Segmentation of Liver Parenchyma in Ultrasound Imaging 於 IEEE AVSS 2025（台南）發表。",
+    "links": {
+      "paper": "https://doi.org/10.1109/AVSS65446.2025.11149741"
+    }
+  },
+  {
+    "date": "2025-08",
+    "text": "8th place in the Taiwan Future Accident Classification Challenge at IEEE AVSS 2025: Yu-Hao Liu, Xin-You Song, Chun-Chia Ku, Chih-Kai Ku and You-Chen Li.",
+    "text_zh": "IEEE AVSS 2025 Taiwan Future Accident Classification Challenge 第 8 名：Yu-Hao Liu、Xin-You Song、Chun-Chia Ku、Chih-Kai Ku、You-Chen Li。",
+    "links": {
+      "site": "https://sites.google.com/view/avss2025-tw/taisc"
+    }
+  },
+  {
+    "date": "2025-06-22",
+    "text": "AI CUP 2025 medical speech de-identification challenge: honorable mention for Yu-Hao Liu, Xin-You Song and Chun-Chia Ku with their teammates.",
+    "text_zh": "AI CUP 2025 醫療語音去識別化競賽：Yu-Hao Liu、Xin-You Song、Chun-Chia Ku 與隊友獲佳作。",
+    "links": {
+      "site": "https://www.aicup.tw/_files/ugd/7fbdbf_d2f4300292a04b2ead648389eaf0147b.pdf"
+    }
+  },
+  {
+    "date": "2025-04-14",
+    "text": "Boosting predictive accuracy in tumor cellularity evaluation with AI-powered ensemble methods is published in Health and Technology.",
+    "text_zh": "Boosting predictive accuracy in tumor cellularity evaluation with AI-powered ensemble methods 刊登於 Health and Technology。",
+    "links": {
+      "paper": "https://doi.org/10.1007/s12553-025-00965-9"
+    }
+  },
+  {
+    "date": "2024-11-02",
+    "text": "Four papers presented at ICBHI 2024 (Tainan) on emotion recognition from fMRI and physiological signals.",
+    "text_zh": "四篇關於 fMRI 與生理訊號情緒辨識的論文於 ICBHI 2024（台南）發表。",
+    "links": {
+      "paper": "https://doi.org/10.1007/978-3-031-86323-3_46"
+    }
+  },
+  {
+    "date": "2024-05-22",
+    "text": "Gold medal at AI CUP 2024 cross-camera multi-target vehicle tracking challenge (parameter track): Chun-Chia Ku and Chih-Kai Ku with their teammates.",
+    "text_zh": "AI CUP 2024 跨攝影機多目標車輛追蹤競賽（參數組）金牌：Chun-Chia Ku、Chih-Kai Ku 與隊友。",
+    "links": {
+      "site": "https://www.aicup.tw/post/%E3%80%90ai-cup-2024%E3%80%91%E5%BE%97%E7%8D%8E%E5%90%8D%E5%96%AE%EF%BC%8Dai%E9%A9%85%E5%8B%95%E5%87%BA%E8%A1%8C%E6%9C%AA%E4%BE%86%EF%BC%9A%E8%B7%A8%E7%9B%B8%E6%A9%9F%E5%A4%9A%E7%9B%AE%E6%A8%99%E8%BB%8A%E8%BC%9B%E8%BF%BD%E8%B9%A4%E7%AB%B6%E8%B3%BD%EF%BC%8D%E5%8F%83%E6%95%B8%E7%B5%84"
+    }
+  }
+]

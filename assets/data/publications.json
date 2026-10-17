@@ -1,0 +1,1151 @@
+[
+  {
+    "title": "EmoRecog-Net: A Multimodal Framework for Emotion Recognition From fMRI and Physiological Signals",
+    "authors": "Hsiang-Chin Chien, Chia-Yen Lee, Jung-Chih Chen",
+    "venue": "IEEE Access",
+    "year": 2026,
+    "type": "journal",
+    "award": "",
+    "impact": "IF 4.2 · Q1 (SJR)",
+    "metrics": {
+      "if": "4.2",
+      "quartile": "Q1",
+      "quartile_source": "SJR",
+      "sjr": "0.884",
+      "citedness_2yr": 6.5
+    },
+    "tier": 1,
+    "score": 1.2,
+    "tier_reason": "SJR Q1",
+    "featured": true,
+    "links": {
+      "doi": "https://doi.org/10.1109/ACCESS.2026.3694984"
+    },
+    "bibtex": "@article{chien2026emorecog,\n  title = {EmoRecog-Net: A Multimodal Framework for Emotion Recognition From fMRI and Physiological Signals},\n  author = {Hsiang-Chin Chien and Chia-Yen Lee and Jung-Chih Chen},\n  year = {2026},\n  journal = {IEEE Access},\n  volume = {14},\n  pages = {77401--77417},\n  publisher = {Institute of Electrical and Electronics Engineers (IEEE)},\n  doi = {10.1109/ACCESS.2026.3694984}\n}"
+  },
+  {
+    "title": "SymPO: Consistency by Construction via Permutation Symmetry for Preference Optimization",
+    "authors": "Meng-Ching Chen, Xin-You Song, Sheng-Bi Chen, Chia-Yen Lee",
+    "venue": "ACM Multimedia (MRAC Workshop)",
+    "year": 2026,
+    "type": "conference",
+    "award": "",
+    "impact": "Workshop · host CORE A*",
+    "metrics": {
+      "if": "",
+      "workshop": true,
+      "host_core": "A*"
+    },
+    "tier": 3,
+    "score": 2.8,
+    "tier_reason": "workshop at a CORE A* venue",
+    "featured": true,
+    "links": {},
+    "bibtex": "@inproceedings{chen2026sympo,\n  title = {SymPO: Consistency by Construction via Permutation Symmetry for Preference Optimization},\n  author = {Meng-Ching Chen and Xin-You Song and Sheng-Bi Chen and Chia-Yen Lee},\n  year = {2026},\n  booktitle = {ACM Multimedia (MRAC Workshop)}\n}"
+  },
+  {
+    "title": "Multi-Scale Feature Learning with Swin Transformer and Hybrid Task Cascade for Robust H&E Cell Analysis",
+    "authors": "Hsiang-Chin Chien, Ching-Ping Wang, Chia-Yen Lee, Jung-Chih Chen",
+    "venue": "Sixth Symposium on Pattern Recognition and Applications (SPRA)",
+    "year": 2026,
+    "type": "conference",
+    "award": "Best Oral Award",
+    "impact": "",
+    "metrics": {
+      "if": ""
+    },
+    "tier": 3,
+    "score": 3,
+    "tier_reason": "no CORE rank",
+    "featured": true,
+    "links": {
+      "doi": "https://doi.org/10.1117/12.3115362"
+    },
+    "bibtex": "@inproceedings{chien2026multi,\n  title = {Multi-Scale Feature Learning with Swin Transformer and Hybrid Task Cascade for Robust H\\&E Cell Analysis},\n  author = {Hsiang-Chin Chien and Ching-Ping Wang and Chia-Yen Lee and Jung-Chih Chen},\n  year = {2026},\n  booktitle = {Sixth Symposium on Pattern Recognition and Applications (SPRA)},\n  publisher = {SPIE},\n  doi = {10.1117/12.3115362}\n}",
+    "award_link": "https://www.spra.org/awards.html",
+    "award_zh": "最佳口頭報告獎"
+  },
+  {
+    "title": "A Two-Stage Neonatal Model with Multiple Brain Regions for Cross-Dataset Tasks",
+    "authors": "Xin-Di Ma, Sheng-Bi Chen, Chia-Yen Lee, Chih-Chung Hsu, Chia-Lin Koh, Chao-Ching Huang, Yung-Chieh Lin",
+    "venue": "Symposium on Engineering, Medicine, and Biology Applications (SEMBA)",
+    "year": 2026,
+    "type": "conference",
+    "award": "Best Poster Award",
+    "impact": "",
+    "metrics": {
+      "if": ""
+    },
+    "tier": 4,
+    "score": 4,
+    "tier_reason": "domestic conference",
+    "featured": true,
+    "links": {},
+    "bibtex": "@inproceedings{ma2026stage,\n  title = {A Two-Stage Neonatal Model with Multiple Brain Regions for Cross-Dataset Tasks},\n  author = {Xin-Di Ma and Sheng-Bi Chen and Chia-Yen Lee and Chih-Chung Hsu and Chia-Lin Koh and Chao-Ching Huang and Yung-Chieh Lin},\n  year = {2026},\n  booktitle = {Symposium on Engineering, Medicine, and Biology Applications (SEMBA)}\n}",
+    "award_link": "https://semba2026.conf.tw/site/page.aspx?lang=en&pid=901&sid=1654",
+    "award_zh": "最佳海報獎"
+  },
+  {
+    "title": "CTS-ContextNet: A Spatio-Temporal Context-Aware Network for Automatic CTS Diagnosis from Ultrasound Imaging",
+    "authors": "You-Chen Li, Hao-Jen Wang, Xin-You Song, Chih-Kai Ku, Chia-Yen Lee",
+    "venue": "Symposium on Engineering, Medicine, and Biology Applications (SEMBA)",
+    "year": 2026,
+    "type": "conference",
+    "award": "Excellent Oral Paper Award",
+    "impact": "",
+    "metrics": {
+      "if": ""
+    },
+    "tier": 4,
+    "score": 4,
+    "tier_reason": "domestic conference",
+    "featured": true,
+    "links": {},
+    "bibtex": "@inproceedings{li2026contextnet,\n  title = {CTS-ContextNet: A Spatio-Temporal Context-Aware Network for Automatic CTS Diagnosis from Ultrasound Imaging},\n  author = {You-Chen Li and Hao-Jen Wang and Xin-You Song and Chih-Kai Ku and Chia-Yen Lee},\n  year = {2026},\n  booktitle = {Symposium on Engineering, Medicine, and Biology Applications (SEMBA)}\n}",
+    "award_link": "https://semba2026.conf.tw/site/page.aspx?lang=en&pid=901&sid=1654",
+    "award_zh": "優秀口頭論文獎"
+  },
+  {
+    "title": "Vessel-BloomSeg: A Vessel Feature–aware Deep Segmentation Network to Overcome Blooming Artifacts in Coronary CT Angiography",
+    "authors": "Hsu-Cheng Wu, Hsiang-Chin Chien, Yu-Hao Liu, Chun-Chia Ku, Chia-Yen Lee",
+    "venue": "Symposium on Engineering, Medicine, and Biology Applications (SEMBA)",
+    "year": 2026,
+    "type": "conference",
+    "award": "Excellent Oral Paper Award",
+    "impact": "",
+    "metrics": {
+      "if": ""
+    },
+    "tier": 4,
+    "score": 4,
+    "tier_reason": "domestic conference",
+    "featured": true,
+    "links": {},
+    "bibtex": "@inproceedings{wu2026vessel,\n  title = {Vessel-BloomSeg: A Vessel Feature–aware Deep Segmentation Network to Overcome Blooming Artifacts in Coronary CT Angiography},\n  author = {Hsu-Cheng Wu and Hsiang-Chin Chien and Yu-Hao Liu and Chun-Chia Ku and Chia-Yen Lee},\n  year = {2026},\n  booktitle = {Symposium on Engineering, Medicine, and Biology Applications (SEMBA)}\n}",
+    "award_link": "https://semba2026.conf.tw/site/page.aspx?lang=en&pid=901&sid=1654",
+    "award_zh": "優秀口頭論文獎"
+  },
+  {
+    "title": "RFMiD: Retinal Image Analysis for multi-Disease Detection challenge",
+    "authors": "Samiksha Pachade, Prasanna Porwal, Manesh Kokare, Girish Deshmukh, Vivek Sahasrabuddhe, Zhengbo Luo, Feng Han, Zitang Sun, Li Qihan, Sei-ichiro Kamata, Edward Ho, Edward Wang, Asaanth Sivajohan, Saerom Youn, Kevin Lane, Jin Chun, Xinliang Wang, Yunchao Gu, Sixu Lu, Young-tack Oh, Hyunjin Park, Chia-Yen Lee, Hung Yeh, Kai-Wen Cheng, Haoyu Wang, Jin Ye, Junjun He, Lixu Gu, Dominik Müller, Iñaki Soto-Rey, Frank Kramer, Hidehisa Arai, Yuma Ochi, Takami Okada, Luca Giancardo, Gwenolé Quellec, Fabrice Mériaudeau",
+    "venue": "Medical Image Analysis",
+    "year": 2025,
+    "type": "journal",
+    "award": "",
+    "impact": "Q1 (SJR)",
+    "metrics": {
+      "if": "",
+      "quartile": "Q1",
+      "quartile_source": "SJR",
+      "sjr": "3.430",
+      "citedness_2yr": 12.2
+    },
+    "tier": 1,
+    "score": 1.2,
+    "tier_reason": "SJR Q1",
+    "featured": true,
+    "links": {
+      "doi": "https://doi.org/10.1016/j.media.2024.103365"
+    },
+    "bibtex": "@article{pachade2025rfmid,\n  title = {RFMiD: Retinal Image Analysis for multi-Disease Detection challenge},\n  author = {Samiksha Pachade and Prasanna Porwal and Manesh Kokare and Girish Deshmukh and Vivek Sahasrabuddhe and Zhengbo Luo and Feng Han and Zitang Sun and Li Qihan and Sei-ichiro Kamata and Edward Ho and Edward Wang and Asaanth Sivajohan and Saerom Youn and Kevin Lane and Jin Chun and Xinliang Wang and Yunchao Gu and Sixu Lu and Young-tack Oh and Hyunjin Park and Chia-Yen Lee and Hung Yeh and Kai-Wen Cheng and Haoyu Wang and Jin Ye and Junjun He and Lixu Gu and Dominik Müller and Iñaki Soto-Rey and Frank Kramer and Hidehisa Arai and Yuma Ochi and Takami Okada and Luca Giancardo and Gwenolé Quellec and Fabrice Mériaudeau},\n  year = {2025},\n  journal = {Medical Image Analysis},\n  volume = {99},\n  pages = {103365},\n  publisher = {Elsevier BV},\n  doi = {10.1016/j.media.2024.103365}\n}"
+  },
+  {
+    "title": "Boosting predictive accuracy in tumor cellularity evaluation with AI-powered ensemble methods",
+    "authors": "Ching-Ping Wang, Yi-Chen Yeh, Jung-Chih Chen, Chia-Yen Lee",
+    "venue": "Health and Technology",
+    "year": 2025,
+    "type": "journal",
+    "award": "",
+    "impact": "IF 3.2 · Q2 (SJR)",
+    "metrics": {
+      "if": "3.2",
+      "quartile": "Q2",
+      "quartile_source": "SJR",
+      "sjr": "0.744",
+      "citedness_2yr": 3.5
+    },
+    "tier": 2,
+    "score": 2,
+    "tier_reason": "SJR Q2",
+    "featured": true,
+    "links": {
+      "doi": "https://doi.org/10.1007/s12553-025-00965-9"
+    },
+    "bibtex": "@article{wang2025boosting,\n  title = {Boosting predictive accuracy in tumor cellularity evaluation with AI-powered ensemble methods},\n  author = {Ching-Ping Wang and Yi-Chen Yeh and Jung-Chih Chen and Chia-Yen Lee},\n  year = {2025},\n  journal = {Health and Technology},\n  volume = {15},\n  number = {3},\n  pages = {577--587},\n  publisher = {Springer Science and Business Media LLC},\n  doi = {10.1007/s12553-025-00965-9}\n}"
+  },
+  {
+    "title": "Attention-Driven Semantic Segmentation of Liver Parenchyma in Ultrasound Imaging with Application to Progressive NASH Risk Stratification",
+    "authors": "Chun-Chia Ku, Hao-Jen Wang, Chih-Kai Ku, Chi-Sheng Chang, Chia-Yen Lee",
+    "venue": "IEEE International Conference on Advanced Visual and Signal-Based Systems (AVSS)",
+    "year": 2025,
+    "type": "conference",
+    "award": "",
+    "impact": "CORE B",
+    "metrics": {
+      "if": "",
+      "core": "B"
+    },
+    "tier": 2,
+    "score": 2.2,
+    "tier_reason": "CORE B",
+    "featured": true,
+    "links": {
+      "doi": "https://doi.org/10.1109/AVSS65446.2025.11149741"
+    },
+    "bibtex": "@inproceedings{ku2025attention,\n  title = {Attention-Driven Semantic Segmentation of Liver Parenchyma in Ultrasound Imaging with Application to Progressive NASH Risk Stratification},\n  author = {Chun-Chia Ku and Hao-Jen Wang and Chih-Kai Ku and Chi-Sheng Chang and Chia-Yen Lee},\n  year = {2025},\n  booktitle = {IEEE International Conference on Advanced Visual and Signal-Based Systems (AVSS)},\n  publisher = {IEEE},\n  doi = {10.1109/AVSS65446.2025.11149741}\n}"
+  },
+  {
+    "title": "Advancing Emotional State Recognition Using Multi-task Learning with Dual CNN-LSTM",
+    "authors": "Ching-Ping Wang, Hsiang-Chin Chien, Xin-Yu Chen, Hong-Kun Lin, Chi-Sheng Chang, Chia-Yen Lee, Jung-Chih Chen",
+    "venue": "International Conference on Biomedical and Health Informatics (ICBHI)",
+    "year": 2025,
+    "type": "conference",
+    "award": "",
+    "impact": "",
+    "metrics": {
+      "if": ""
+    },
+    "tier": 3,
+    "score": 3,
+    "tier_reason": "no CORE rank",
+    "featured": true,
+    "links": {
+      "doi": "https://doi.org/10.1007/978-3-031-86323-3_46"
+    },
+    "bibtex": "@inproceedings{wang2025advancing,\n  title = {Advancing Emotional State Recognition Using Multi-task Learning with Dual CNN-LSTM},\n  author = {Ching-Ping Wang and Hsiang-Chin Chien and Xin-Yu Chen and Hong-Kun Lin and Chi-Sheng Chang and Chia-Yen Lee and Jung-Chih Chen},\n  year = {2025},\n  booktitle = {International Conference on Biomedical and Health Informatics (ICBHI)},\n  publisher = {Springer Nature Switzerland},\n  doi = {10.1007/978-3-031-86323-3_46}\n}"
+  },
+  {
+    "title": "Deep Learning Approaches for Emotion Recognition with Missing PPG and RESP Signals Using Multi-channel Data",
+    "authors": "Xin-Yu Chen, Hsiang-Chin Chien, Ching-Ping Wang, Hao-Jen Wang, Chia-Yen Lee",
+    "venue": "International Conference on Biomedical and Health Informatics (ICBHI)",
+    "year": 2025,
+    "type": "conference",
+    "award": "",
+    "impact": "",
+    "metrics": {
+      "if": ""
+    },
+    "tier": 3,
+    "score": 3,
+    "tier_reason": "no CORE rank",
+    "featured": true,
+    "links": {
+      "doi": "https://doi.org/10.1007/978-3-031-86323-3_51"
+    },
+    "bibtex": "@inproceedings{chen2025deep,\n  title = {Deep Learning Approaches for Emotion Recognition with Missing PPG and RESP Signals Using Multi-channel Data},\n  author = {Xin-Yu Chen and Hsiang-Chin Chien and Ching-Ping Wang and Hao-Jen Wang and Chia-Yen Lee},\n  year = {2025},\n  booktitle = {International Conference on Biomedical and Health Informatics (ICBHI)},\n  publisher = {Springer Nature Switzerland},\n  doi = {10.1007/978-3-031-86323-3_51}\n}"
+  },
+  {
+    "title": "Feature Extraction of fMRI Signals Based on Autoencoder for Constructing a Two-Stage Multi-class Emotion Classification Model",
+    "authors": "Chi-Sheng Chang, Shao-Pu Lu, Chia-Yen Lee",
+    "venue": "International Conference on Biomedical and Health Informatics (ICBHI)",
+    "year": 2025,
+    "type": "conference",
+    "award": "",
+    "impact": "",
+    "metrics": {
+      "if": ""
+    },
+    "tier": 3,
+    "score": 3,
+    "tier_reason": "no CORE rank",
+    "featured": true,
+    "links": {
+      "doi": "https://doi.org/10.1007/978-3-031-86323-3_52"
+    },
+    "bibtex": "@inproceedings{chang2025feature,\n  title = {Feature Extraction of fMRI Signals Based on Autoencoder for Constructing a Two-Stage Multi-class Emotion Classification Model},\n  author = {Chi-Sheng Chang and Shao-Pu Lu and Chia-Yen Lee},\n  year = {2025},\n  booktitle = {International Conference on Biomedical and Health Informatics (ICBHI)},\n  publisher = {Springer Nature Switzerland},\n  doi = {10.1007/978-3-031-86323-3_52}\n}"
+  },
+  {
+    "title": "Predicting Emotions Using Channel Attention Mechanism on fMRI Signal Data",
+    "authors": "Hong-Kun Lin, Chia-Yen Lee",
+    "venue": "International Conference on Biomedical and Health Informatics (ICBHI)",
+    "year": 2025,
+    "type": "conference",
+    "award": "",
+    "impact": "",
+    "metrics": {
+      "if": ""
+    },
+    "tier": 3,
+    "score": 3,
+    "tier_reason": "no CORE rank",
+    "featured": true,
+    "links": {
+      "doi": "https://doi.org/10.1007/978-3-031-86323-3_48"
+    },
+    "bibtex": "@inproceedings{lin2025predicting,\n  title = {Predicting Emotions Using Channel Attention Mechanism on fMRI Signal Data},\n  author = {Hong-Kun Lin and Chia-Yen Lee},\n  year = {2025},\n  booktitle = {International Conference on Biomedical and Health Informatics (ICBHI)},\n  publisher = {Springer Nature Switzerland},\n  doi = {10.1007/978-3-031-86323-3_48}\n}"
+  },
+  {
+    "title": "Predicting Car Accidents with YOLOv7 Object Detection and Object Relationships",
+    "authors": "Ming-Xuan Wu, Chi-Sheng Chang, Jr-Ming Miao, Chia-Yen Lee",
+    "venue": "IEEE International Conference on Multimedia and Expo Workshops (ICMEW)",
+    "year": 2023,
+    "type": "conference",
+    "award": "AVA Challenge 1st Overall",
+    "impact": "Workshop · host CORE A",
+    "metrics": {
+      "if": "",
+      "workshop": true,
+      "host_core": "A"
+    },
+    "tier": 3,
+    "score": 2.8,
+    "tier_reason": "workshop at a CORE A venue",
+    "featured": false,
+    "links": {
+      "doi": "https://doi.org/10.1109/ICMEW59549.2023.00021"
+    },
+    "bibtex": "@inproceedings{wu2023predicting,\n  title = {Predicting Car Accidents with YOLOv7 Object Detection and Object Relationships},\n  author = {Ming-Xuan Wu and Chi-Sheng Chang and Jr-Ming Miao and Chia-Yen Lee},\n  year = {2023},\n  booktitle = {IEEE International Conference on Multimedia and Expo Workshops (ICMEW)},\n  publisher = {IEEE},\n  doi = {10.1109/ICMEW59549.2023.00021}\n}",
+    "award_link": "https://sites.google.com/view/tvcd-tw/ava-challenge",
+    "award_zh": "AVA Challenge 總成績世界第一",
+    "award_challenge": "AVA Challenge",
+    "award_results": [
+      "1st Overall"
+    ],
+    "award_results_zh": [
+      "總成績世界第一"
+    ]
+  },
+  {
+    "title": "Using an ensemble Mask R-CNN model on tumor cellularity estimation",
+    "authors": "Ching-Ping Wang, Hsiang-Chin Chien, Chun-Tung Tseng, Zhao-Xiang Luo, Jung-Chih Chen, Chia-Yen Lee",
+    "venue": "IEEE International Symposium on Biomedical Imaging (ISBI 2023), PAIP 2023 Challenge",
+    "year": 2023,
+    "type": "conference",
+    "award": "PAIP 2023 Challenge 4th Overall",
+    "impact": "",
+    "metrics": {},
+    "tier": 3,
+    "score": 3,
+    "tier_reason": "challenge paper",
+    "featured": false,
+    "links": {},
+    "bibtex": "@inproceedings{wang2023using,\n  title = {Using an ensemble Mask R-CNN model on tumor cellularity estimation},\n  author = {Ching-Ping Wang and Hsiang-Chin Chien and Chun-Tung Tseng and Zhao-Xiang Luo and Jung-Chih Chen and Chia-Yen Lee},\n  year = {2023},\n  booktitle = {IEEE International Symposium on Biomedical Imaging (ISBI 2023), PAIP 2023 Challenge}\n}",
+    "manual": true,
+    "award_link": "https://2023paip.grand-challenge.org/",
+    "award_zh": "PAIP 2023 Challenge 總成績世界第四",
+    "award_challenge": "PAIP 2023 Challenge",
+    "award_results": [
+      "4th Overall"
+    ],
+    "award_results_zh": [
+      "總成績世界第四"
+    ]
+  },
+  {
+    "title": "A Deep Learning-Based Segmentation Strategy for Diabetic Foot Ulcers: Combining the Strengths of HarDNet-MSEG and SAM Models",
+    "authors": "Yuan-Pei Chen, Qing-Cheng Long, Hao-Jen Wang, Shih-Sian Tang, Chia-Yen Lee",
+    "venue": "Sixth International Symposium on Computer, Consumer and Control (IS3C)",
+    "year": 2023,
+    "type": "conference",
+    "award": "",
+    "impact": "",
+    "metrics": {
+      "if": ""
+    },
+    "tier": 3,
+    "score": 3,
+    "tier_reason": "no CORE rank",
+    "featured": false,
+    "links": {
+      "doi": "https://doi.org/10.1109/IS3C57901.2023.00107"
+    },
+    "bibtex": "@inproceedings{chen2023deep,\n  title = {A Deep Learning-Based Segmentation Strategy for Diabetic Foot Ulcers: Combining the Strengths of HarDNet-MSEG and SAM Models},\n  author = {Yuan-Pei Chen and Qing-Cheng Long and Hao-Jen Wang and Shih-Sian Tang and Chia-Yen Lee},\n  year = {2023},\n  booktitle = {Sixth International Symposium on Computer, Consumer and Control (IS3C)},\n  publisher = {IEEE},\n  doi = {10.1109/IS3C57901.2023.00107}\n}"
+  },
+  {
+    "title": "Automated ROI Selection for Fatty Liver Disease Severity Classification Using Attention Map Analysis",
+    "authors": "Hao-Jen Wang, Kai-Wen Cheng, Hung Ye, Hong-Kun Lin, Jin-De Chen, Tsung-Po Chen, Chia-Yen Lee",
+    "venue": "Sixth International Symposium on Computer, Consumer and Control (IS3C)",
+    "year": 2023,
+    "type": "conference",
+    "award": "",
+    "impact": "",
+    "metrics": {
+      "if": ""
+    },
+    "tier": 3,
+    "score": 3,
+    "tier_reason": "no CORE rank",
+    "featured": false,
+    "links": {
+      "doi": "https://doi.org/10.1109/IS3C57901.2023.00106"
+    },
+    "bibtex": "@inproceedings{wang2023automated,\n  title = {Automated ROI Selection for Fatty Liver Disease Severity Classification Using Attention Map Analysis},\n  author = {Hao-Jen Wang and Kai-Wen Cheng and Hung Ye and Hong-Kun Lin and Jin-De Chen and Tsung-Po Chen and Chia-Yen Lee},\n  year = {2023},\n  booktitle = {Sixth International Symposium on Computer, Consumer and Control (IS3C)},\n  publisher = {IEEE},\n  doi = {10.1109/IS3C57901.2023.00106}\n}"
+  },
+  {
+    "title": "A comprehensive study of age-related macular degeneration detection",
+    "authors": "Chih-Chung Hsu, Chia-Yen Lee, Cheng-Jhong Lin, Hung Yeh",
+    "venue": "Multimedia Tools and Applications",
+    "year": 2022,
+    "type": "journal",
+    "award": "",
+    "impact": "Q1 (SJR)",
+    "metrics": {
+      "if": "",
+      "quartile": "Q1",
+      "quartile_source": "SJR",
+      "sjr": "0.798",
+      "citedness_2yr": 5.9
+    },
+    "tier": 1,
+    "score": 1.2,
+    "tier_reason": "SJR Q1",
+    "featured": false,
+    "links": {
+      "doi": "https://doi.org/10.1007/s11042-021-11896-8"
+    },
+    "bibtex": "@article{hsu2022comprehensive,\n  title = {A comprehensive study of age-related macular degeneration detection},\n  author = {Chih-Chung Hsu and Chia-Yen Lee and Cheng-Jhong Lin and Hung Yeh},\n  year = {2022},\n  journal = {Multimedia Tools and Applications},\n  volume = {81},\n  number = {9},\n  pages = {11897--11916},\n  publisher = {Springer Science and Business Media LLC},\n  doi = {10.1007/s11042-021-11896-8}\n}"
+  },
+  {
+    "title": "ADAM Challenge: Detecting Age-Related Macular Degeneration From Fundus Images",
+    "authors": "Huihui Fang, Fei Li, Huazhu Fu, Xu Sun, Xingxing Cao, Fengbin Lin, Jaemin Son, Sunho Kim, Gwenole Quellec, Sarah Matta, Sharath M. Shankaranarayana, Yi-Ting Chen, Chuen-Heng Wang, Nisarg A. Shah, Chia-Yen Lee, Chih-Chung Hsu, Hai Xie, Baiying Lei, Ujjwal Baid, Shubham Innani, Kang Dang, Wenxiu Shi, Ravi Kamble, Nitin Singhal, Ching-Wei Wang, Shih-Chang Lo, Jose Ignacio Orlando, Hrvoje Bogunovic, Xiulan Zhang, Yanwu Xu",
+    "venue": "IEEE Transactions on Medical Imaging",
+    "year": 2022,
+    "type": "journal",
+    "award": "",
+    "impact": "Q1 (SJR)",
+    "metrics": {
+      "if": "",
+      "quartile": "Q1",
+      "quartile_source": "SJR",
+      "sjr": "2.501",
+      "citedness_2yr": 10.2
+    },
+    "tier": 1,
+    "score": 1.2,
+    "tier_reason": "SJR Q1",
+    "featured": false,
+    "links": {
+      "doi": "https://doi.org/10.1109/TMI.2022.3172773"
+    },
+    "bibtex": "@article{fang2022adam,\n  title = {ADAM Challenge: Detecting Age-Related Macular Degeneration From Fundus Images},\n  author = {Huihui Fang and Fei Li and Huazhu Fu and Xu Sun and Xingxing Cao and Fengbin Lin and Jaemin Son and Sunho Kim and Gwenole Quellec and Sarah Matta and Sharath M. Shankaranarayana and Yi-Ting Chen and Chuen-Heng Wang and Nisarg A. Shah and Chia-Yen Lee and Chih-Chung Hsu and Hai Xie and Baiying Lei and Ujjwal Baid and Shubham Innani and Kang Dang and Wenxiu Shi and Ravi Kamble and Nitin Singhal and Ching-Wei Wang and Shih-Chang Lo and Jose Ignacio Orlando and Hrvoje Bogunovic and Xiulan Zhang and Yanwu Xu},\n  year = {2022},\n  journal = {IEEE Transactions on Medical Imaging},\n  volume = {41},\n  number = {10},\n  pages = {2828--2847},\n  publisher = {Institute of Electrical and Electronics Engineers (IEEE)},\n  doi = {10.1109/TMI.2022.3172773}\n}"
+  },
+  {
+    "title": "Automated segmentation of normal and diseased coronary arteries – The ASOCA challenge",
+    "authors": "Ramtin Gharleghi, Dona Adikari, Katy Ellenberger, Sze-Yuan Ooi, Chris Ellis, Chung-Ming Chen, Ruochen Gao, Yuting He, Raabid Hussain, Chia-Yen Lee, Jun Li, Jun Ma, Ziwei Nie, Bruno Oliveira, Yaolei Qi, Youssef Skandarani, João L. Vilaça, Xiyue Wang, Sen Yang, Arcot Sowmya, Susann Beier",
+    "venue": "Computerized Medical Imaging and Graphics",
+    "year": 2022,
+    "type": "journal",
+    "award": "",
+    "impact": "Q1 (SJR)",
+    "metrics": {
+      "if": "",
+      "quartile": "Q1",
+      "quartile_source": "SJR",
+      "sjr": "1.246",
+      "citedness_2yr": 6.2
+    },
+    "tier": 1,
+    "score": 1.2,
+    "tier_reason": "SJR Q1",
+    "featured": false,
+    "links": {
+      "doi": "https://doi.org/10.1016/j.compmedimag.2022.102049"
+    },
+    "bibtex": "@article{gharleghi2022automated,\n  title = {Automated segmentation of normal and diseased coronary arteries – The ASOCA challenge},\n  author = {Ramtin Gharleghi and Dona Adikari and Katy Ellenberger and Sze-Yuan Ooi and Chris Ellis and Chung-Ming Chen and Ruochen Gao and Yuting He and Raabid Hussain and Chia-Yen Lee and Jun Li and Jun Ma and Ziwei Nie and Bruno Oliveira and Yaolei Qi and Youssef Skandarani and João L. Vilaça and Xiyue Wang and Sen Yang and Arcot Sowmya and Susann Beier},\n  year = {2022},\n  journal = {Computerized Medical Imaging and Graphics},\n  volume = {97},\n  pages = {102049},\n  publisher = {Elsevier BV},\n  doi = {10.1016/j.compmedimag.2022.102049}\n}"
+  },
+  {
+    "title": "Effect of synthesis time on plasmonic properties of Ag dendritic nanoforests",
+    "authors": "Hung Ji Huang, Han-Wei Chang, Chia-Yen Lee, Ming-Hua Shiao, Yen-Ling Chiu, Pee-Yew Lee, Yung-Sheng Lin",
+    "venue": "IUCrJ",
+    "year": 2022,
+    "type": "journal",
+    "award": "",
+    "impact": "Q1 (SJR)",
+    "metrics": {
+      "if": "",
+      "quartile": "Q1",
+      "quartile_source": "SJR",
+      "sjr": "1.061",
+      "citedness_2yr": 4.1
+    },
+    "tier": 1,
+    "score": 1.2,
+    "tier_reason": "SJR Q1",
+    "featured": false,
+    "links": {
+      "doi": "https://doi.org/10.1107/S2052252522002901"
+    },
+    "bibtex": "@article{huang2022effect,\n  title = {Effect of synthesis time on plasmonic properties of Ag dendritic nanoforests},\n  author = {Hung Ji Huang and Han-Wei Chang and Chia-Yen Lee and Ming-Hua Shiao and Yen-Ling Chiu and Pee-Yew Lee and Yung-Sheng Lin},\n  year = {2022},\n  journal = {IUCrJ},\n  volume = {9},\n  number = {3},\n  pages = {355--363},\n  publisher = {International Union of Crystallography (IUCr)},\n  doi = {10.1107/S2052252522002901}\n}",
+    "hidden": true
+  },
+  {
+    "title": "Image registration method using representative feature detection and iterative coherent spatial mapping for infrared medical images with flat regions",
+    "authors": "Hao-Jen Wang, Chia-Yen Lee, Jhih-Hao Lai, Yeun-Chung Chang, Chung-Ming Chen",
+    "venue": "Scientific Reports",
+    "year": 2022,
+    "type": "journal",
+    "award": "",
+    "impact": "Q1 (SJR)",
+    "metrics": {
+      "if": "",
+      "quartile": "Q1",
+      "quartile_source": "SJR",
+      "sjr": "0.893",
+      "citedness_2yr": 5.3
+    },
+    "tier": 1,
+    "score": 1.2,
+    "tier_reason": "SJR Q1",
+    "featured": false,
+    "links": {
+      "doi": "https://doi.org/10.1038/s41598-022-11379-2"
+    },
+    "bibtex": "@article{wang2022image,\n  title = {Image registration method using representative feature detection and iterative coherent spatial mapping for infrared medical images with flat regions},\n  author = {Hao-Jen Wang and Chia-Yen Lee and Jhih-Hao Lai and Yeun-Chung Chang and Chung-Ming Chen},\n  year = {2022},\n  journal = {Scientific Reports},\n  volume = {12},\n  number = {1},\n  publisher = {Springer Science and Business Media LLC},\n  doi = {10.1038/s41598-022-11379-2}\n}"
+  },
+  {
+    "title": "Added Value of Computed Tomography Virtual Intravascular Endoscopy in the Evaluation of Coronary Arteries with Stents or Plaques",
+    "authors": "Patricia Wanping Wu, Pei-Kwei Tsay, Zhonghua Sun, Syu-Jyun Peng, Chia-Yen Lee, Ming-Yi Hsu, Yu-Shien Ko, I-Chang Hsieh, Ming-Shien Wen, Yung-Liang Wan",
+    "venue": "Diagnostics",
+    "year": 2022,
+    "type": "journal",
+    "award": "",
+    "impact": "Q2 (SJR)",
+    "metrics": {
+      "if": "",
+      "quartile": "Q2",
+      "quartile_source": "SJR",
+      "sjr": "0.848",
+      "citedness_2yr": 4
+    },
+    "tier": 2,
+    "score": 2,
+    "tier_reason": "SJR Q2",
+    "featured": false,
+    "links": {
+      "doi": "https://doi.org/10.3390/diagnostics12020390"
+    },
+    "bibtex": "@article{wu2022added,\n  title = {Added Value of Computed Tomography Virtual Intravascular Endoscopy in the Evaluation of Coronary Arteries with Stents or Plaques},\n  author = {Patricia Wanping Wu and Pei-Kwei Tsay and Zhonghua Sun and Syu-Jyun Peng and Chia-Yen Lee and Ming-Yi Hsu and Yu-Shien Ko and I-Chang Hsieh and Ming-Shien Wen and Yung-Liang Wan},\n  year = {2022},\n  journal = {Diagnostics},\n  volume = {12},\n  number = {2},\n  pages = {390},\n  publisher = {MDPI AG},\n  doi = {10.3390/diagnostics12020390}\n}"
+  },
+  {
+    "title": "Airway Tree Modeling Using Dual-channel 3D UNet 3+ with Vesselness Prior",
+    "authors": "Hsiang-Chin Chien, Ching-Ping Wang, Jung-Chih Chen, Chia-Yen Lee",
+    "venue": "MICCAI 2022 Challenge: Airway Tree Modeling (ATM'22)",
+    "year": 2022,
+    "type": "conference",
+    "award": "",
+    "impact": "",
+    "metrics": {},
+    "tier": 3,
+    "score": 3,
+    "tier_reason": "challenge paper",
+    "featured": false,
+    "links": {
+      "doi": "https://doi.org/10.48550/arXiv.2208.13969"
+    },
+    "bibtex": "@inproceedings{chien2022airway,\n  title = {Airway Tree Modeling Using Dual-channel 3D UNet 3+ with Vesselness Prior},\n  author = {Hsiang-Chin Chien and Ching-Ping Wang and Jung-Chih Chen and Chia-Yen Lee},\n  year = {2022},\n  booktitle = {MICCAI 2022 Challenge: Airway Tree Modeling (ATM'22)},\n  doi = {10.48550/arXiv.2208.13969}\n}",
+    "manual": true
+  },
+  {
+    "title": "Retinal Image Analysis for multi-Disease Detection Challenge",
+    "authors": "Hung Yeh, Kai-Wen Cheng, Chia-Yen Lee",
+    "venue": "IEEE International Symposium on Biomedical Imaging (ISBI 2021), RFMiD Challenge",
+    "year": 2021,
+    "type": "conference",
+    "award": "RFMiD Challenge 5th Place",
+    "impact": "",
+    "metrics": {},
+    "tier": 3,
+    "score": 3,
+    "tier_reason": "challenge paper",
+    "featured": false,
+    "links": {},
+    "bibtex": "@inproceedings{yeh2021retinal,\n  title = {Retinal Image Analysis for multi-Disease Detection Challenge},\n  author = {Hung Yeh and Kai-Wen Cheng and Chia-Yen Lee},\n  year = {2021},\n  booktitle = {IEEE International Symposium on Biomedical Imaging (ISBI 2021), RFMiD Challenge}\n}",
+    "manual": true,
+    "award_link": "https://doi.org/10.1016/j.media.2024.103365",
+    "award_zh": "RFMiD Challenge 世界第五",
+    "award_challenge": "RFMiD Challenge",
+    "award_results": [
+      "5th Place"
+    ],
+    "award_results_zh": [
+      "世界第五"
+    ]
+  },
+  {
+    "title": "Deep Fake Image Detection Based on Pairwise Learning",
+    "authors": "Chih-Chung Hsu, Yi-Xiu Zhuang, Chia-Yen Lee",
+    "venue": "Applied Sciences",
+    "year": 2020,
+    "type": "journal",
+    "award": "",
+    "impact": "Q2 (SJR)",
+    "metrics": {
+      "if": "",
+      "quartile": "Q2",
+      "quartile_source": "SJR",
+      "sjr": "0.555",
+      "citedness_2yr": 4.2
+    },
+    "tier": 2,
+    "score": 2,
+    "tier_reason": "SJR Q2",
+    "featured": false,
+    "links": {
+      "doi": "https://doi.org/10.3390/app10010370"
+    },
+    "bibtex": "@article{hsu2020deep,\n  title = {Deep Fake Image Detection Based on Pairwise Learning},\n  author = {Chih-Chung Hsu and Yi-Xiu Zhuang and Chia-Yen Lee},\n  year = {2020},\n  journal = {Applied Sciences},\n  volume = {10},\n  number = {1},\n  pages = {370},\n  publisher = {MDPI AG},\n  doi = {10.3390/app10010370}\n}"
+  },
+  {
+    "title": "Fully automated lesion segmentation and visualization in automated whole breast ultrasound (ABUS) images",
+    "authors": "Chia-Yen Lee, Tzu-Fang Chang, Yi-Hong Chou, Kuen-Cheh Yang",
+    "venue": "Quantitative Imaging in Medicine and Surgery",
+    "year": 2020,
+    "type": "journal",
+    "award": "",
+    "impact": "Q2 (SJR)",
+    "metrics": {
+      "if": "",
+      "quartile": "Q2",
+      "quartile_source": "SJR",
+      "sjr": "0.674",
+      "citedness_2yr": 1.9
+    },
+    "tier": 2,
+    "score": 2,
+    "tier_reason": "SJR Q2",
+    "featured": false,
+    "links": {
+      "doi": "https://doi.org/10.21037/QIMS.2020.01.12"
+    },
+    "bibtex": "@article{lee2020fully,\n  title = {Fully automated lesion segmentation and visualization in automated whole breast ultrasound (ABUS) images},\n  author = {Chia-Yen Lee and Tzu-Fang Chang and Yi-Hong Chou and Kuen-Cheh Yang},\n  year = {2020},\n  journal = {Quantitative Imaging in Medicine and Surgery},\n  volume = {10},\n  number = {3},\n  pages = {568--584},\n  publisher = {AME Publishing Company},\n  doi = {10.21037/QIMS.2020.01.12}\n}"
+  },
+  {
+    "title": "Automated Segmentation of Coronary Arteries",
+    "authors": "Jing-Yang Zheng, Hsiang-Chin Chien, Ching-Ping Wang, Yu-Chuan Chen, Chung-Ming Chen, Tzung-Dau Wang, Wen-Jeng Lee, Chia-Yen Lee",
+    "venue": "MICCAI 2020, Automated Segmentation of Coronary Arteries Challenge",
+    "year": 2020,
+    "type": "conference",
+    "award": "ASOCA Challenge 3rd Place",
+    "impact": "",
+    "metrics": {},
+    "tier": 3,
+    "score": 3,
+    "tier_reason": "challenge paper",
+    "featured": false,
+    "links": {},
+    "bibtex": "@inproceedings{zheng2020automated,\n  title = {Automated Segmentation of Coronary Arteries},\n  author = {Jing-Yang Zheng and Hsiang-Chin Chien and Ching-Ping Wang and Yu-Chuan Chen and Chung-Ming Chen and Tzung-Dau Wang and Wen-Jeng Lee and Chia-Yen Lee},\n  year = {2020},\n  booktitle = {MICCAI 2020, Automated Segmentation of Coronary Arteries Challenge}\n}",
+    "manual": true,
+    "award_link": "https://innoaward.taiwan-healthcare.org/award_detail.php?REFDOCID=0r4r6dyav7nxl3ih&REFDOCTYPID=0r4ggllnka0x43sh&num=1",
+    "award_zh": "ASOCA Challenge 世界第三",
+    "award_challenge": "ASOCA Challenge",
+    "award_results": [
+      "3rd Place"
+    ],
+    "award_results_zh": [
+      "世界第三"
+    ]
+  },
+  {
+    "title": "Deep-learning based automated segmentation of Diabetic Retinopathy symptoms",
+    "authors": "Hung Yeh, Cheng-Jhong Lin, Chih-Chung Hsu, Chia-Yen Lee",
+    "venue": "International Symposium on Computer, Consumer and Control (IS3C)",
+    "year": 2020,
+    "type": "conference",
+    "award": "",
+    "impact": "",
+    "metrics": {
+      "if": ""
+    },
+    "tier": 3,
+    "score": 3,
+    "tier_reason": "no CORE rank",
+    "featured": false,
+    "links": {
+      "doi": "https://doi.org/10.1109/IS3C50286.2020.00135"
+    },
+    "bibtex": "@inproceedings{yeh2020deep,\n  title = {Deep-learning based automated segmentation of Diabetic Retinopathy symptoms},\n  author = {Hung Yeh and Cheng-Jhong Lin and Chih-Chung Hsu and Chia-Yen Lee},\n  year = {2020},\n  booktitle = {International Symposium on Computer, Consumer and Control (IS3C)},\n  publisher = {IEEE},\n  doi = {10.1109/IS3C50286.2020.00135}\n}"
+  },
+  {
+    "title": "Automated drosophila heartbeat counting based on image segmentation technique on optical coherence tomography",
+    "authors": "Chia-Yen Lee, Hao-Jen Wang, Jheng-Da Jhang, I-Chun Cho",
+    "venue": "Scientific Reports",
+    "year": 2019,
+    "type": "journal",
+    "award": "",
+    "impact": "Q1 (SJR)",
+    "metrics": {
+      "if": "",
+      "quartile": "Q1",
+      "quartile_source": "SJR",
+      "sjr": "0.893",
+      "citedness_2yr": 5.3
+    },
+    "tier": 1,
+    "score": 1.2,
+    "tier_reason": "SJR Q1",
+    "featured": false,
+    "links": {
+      "doi": "https://doi.org/10.1038/s41598-019-41720-1"
+    },
+    "bibtex": "@article{lee2019automated,\n  title = {Automated drosophila heartbeat counting based on image segmentation technique on optical coherence tomography},\n  author = {Chia-Yen Lee and Hao-Jen Wang and Jheng-Da Jhang and I-Chun Cho},\n  year = {2019},\n  journal = {Scientific Reports},\n  volume = {9},\n  number = {1},\n  publisher = {Springer Science and Business Media LLC},\n  doi = {10.1038/s41598-019-41720-1}\n}"
+  },
+  {
+    "title": "Discrimination of benign and malignant pulmonary tumors in computed tomography: effective priori information of fast learning network architecture",
+    "authors": "Hao-Jen Wang, Leng-Rong Chen, Li-Wei Chen, Yi-Chang Chen, Shun-Mao Yang, Mong-Wei Lin, Joseph Chang, Chia-Chen Li, Chia-Yen Lee, Jin-Shing Chen, Yeun-Chung Chang, Chung-Ming Chen",
+    "venue": "Medical Imaging: Image Processing",
+    "year": 2019,
+    "type": "conference",
+    "award": "",
+    "impact": "",
+    "metrics": {
+      "if": ""
+    },
+    "tier": 3,
+    "score": 3,
+    "tier_reason": "no CORE rank",
+    "featured": false,
+    "links": {
+      "doi": "https://doi.org/10.1117/12.2512846"
+    },
+    "bibtex": "@inproceedings{wang2019discrimination,\n  title = {Discrimination of benign and malignant pulmonary tumors in computed tomography: effective priori information of fast learning network architecture},\n  author = {Hao-Jen Wang and Leng-Rong Chen and Li-Wei Chen and Yi-Chang Chen and Shun-Mao Yang and Mong-Wei Lin and Joseph Chang and Chia-Chen Li and Chia-Yen Lee and Jin-Shing Chen and Yeun-Chung Chang and Chung-Ming Chen},\n  year = {2019},\n  booktitle = {Medical Imaging: Image Processing},\n  publisher = {SPIE},\n  doi = {10.1117/12.2512846}\n}"
+  },
+  {
+    "title": "Popularity Prediction of Social Media based on Multi-Modal Feature Mining",
+    "authors": "Chih-Chung Hsu, Li-Wei Kang, Chia-Yen Lee, Jun-Yi Lee, Zhong-Xuan Zhang, Shao-Min Wu",
+    "venue": "Proceedings of the 27th ACM International Conference on Multimedia",
+    "year": 2019,
+    "type": "conference",
+    "award": "",
+    "impact": "",
+    "metrics": {
+      "if": ""
+    },
+    "tier": 3,
+    "score": 3,
+    "tier_reason": "no CORE rank",
+    "featured": false,
+    "links": {
+      "doi": "https://doi.org/10.1145/3343031.3356064"
+    },
+    "bibtex": "@inproceedings{hsu2019popularity,\n  title = {Popularity Prediction of Social Media based on Multi-Modal Feature Mining},\n  author = {Chih-Chung Hsu and Li-Wei Kang and Chia-Yen Lee and Jun-Yi Lee and Zhong-Xuan Zhang and Shao-Min Wu},\n  year = {2019},\n  booktitle = {Proceedings of the 27th ACM International Conference on Multimedia},\n  publisher = {ACM},\n  doi = {10.1145/3343031.3356064}\n}"
+  },
+  {
+    "title": "An Iterative Refinement Approach for Social Media Headline Prediction",
+    "authors": "Chih-Chung Hsu, Chia-Yen Lee, Ting-Xuan Liao, Jun-Yi Lee, Tsai-Yne Hou, Ying-Chu Kuo, Jing-Wen Lin, Ching-Yi Hsueh, Zhong-Xuan Zhang, Hsiang-Chin Chien",
+    "venue": "Proceedings of the 26th ACM international conference on Multimedia",
+    "year": 2018,
+    "type": "conference",
+    "award": "",
+    "impact": "CORE A*",
+    "metrics": {
+      "if": "",
+      "core": "A*"
+    },
+    "tier": 1,
+    "score": 1,
+    "tier_reason": "CORE A*",
+    "featured": false,
+    "links": {
+      "doi": "https://doi.org/10.1145/3240508.3266443"
+    },
+    "bibtex": "@inproceedings{hsu2018iterative,\n  title = {An Iterative Refinement Approach for Social Media Headline Prediction},\n  author = {Chih-Chung Hsu and Chia-Yen Lee and Ting-Xuan Liao and Jun-Yi Lee and Tsai-Yne Hou and Ying-Chu Kuo and Jing-Wen Lin and Ching-Yi Hsueh and Zhong-Xuan Zhang and Hsiang-Chin Chien},\n  year = {2018},\n  booktitle = {Proceedings of the 26th ACM international conference on Multimedia},\n  publisher = {ACM},\n  doi = {10.1145/3240508.3266443}\n}"
+  },
+  {
+    "title": "An automated skin segmentation of Breasts in Dynamic Contrast-Enhanced Magnetic Resonance Imaging",
+    "authors": "Chia-Yen Lee, Tzu-Fang Chang, Nai-Yun Chang, Yeun-Chung Chang",
+    "venue": "Scientific Reports",
+    "year": 2018,
+    "type": "journal",
+    "award": "",
+    "impact": "Q1 (SJR)",
+    "metrics": {
+      "if": "",
+      "quartile": "Q1",
+      "quartile_source": "SJR",
+      "sjr": "0.893",
+      "citedness_2yr": 5.3
+    },
+    "tier": 1,
+    "score": 1.2,
+    "tier_reason": "SJR Q1",
+    "featured": false,
+    "links": {
+      "doi": "https://doi.org/10.1038/s41598-018-22941-2"
+    },
+    "bibtex": "@article{lee2018automated,\n  title = {An automated skin segmentation of Breasts in Dynamic Contrast-Enhanced Magnetic Resonance Imaging},\n  author = {Chia-Yen Lee and Tzu-Fang Chang and Nai-Yun Chang and Yeun-Chung Chang},\n  year = {2018},\n  journal = {Scientific Reports},\n  volume = {8},\n  number = {1},\n  publisher = {Springer Science and Business Media LLC},\n  doi = {10.1038/s41598-018-22941-2}\n}"
+  },
+  {
+    "title": "Is Intensity Inhomogeneity Correction Useful for Classification of Breast Cancer in Sonograms Using Deep Neural Network?",
+    "authors": "Chia-Yen Lee, Guan-Lin Chen, Zhong-Xuan Zhang, Yi-Hong Chou, Chih-Chung Hsu",
+    "venue": "Journal of Healthcare Engineering",
+    "year": 2018,
+    "type": "journal",
+    "award": "",
+    "impact": "Q2 (SJR)",
+    "metrics": {
+      "if": "",
+      "quartile": "Q2",
+      "quartile_source": "SJR",
+      "sjr": "0.594",
+      "citedness_2yr": 0.7
+    },
+    "tier": 2,
+    "score": 2,
+    "tier_reason": "SJR Q2",
+    "featured": false,
+    "links": {
+      "doi": "https://doi.org/10.1155/2018/8413403"
+    },
+    "bibtex": "@article{lee2018intensity,\n  title = {Is Intensity Inhomogeneity Correction Useful for Classification of Breast Cancer in Sonograms Using Deep Neural Network?},\n  author = {Chia-Yen Lee and Guan-Lin Chen and Zhong-Xuan Zhang and Yi-Hong Chou and Chih-Chung Hsu},\n  year = {2018},\n  journal = {Journal of Healthcare Engineering},\n  volume = {2018},\n  pages = {1--10},\n  publisher = {Wiley},\n  doi = {10.1155/2018/8413403}\n}"
+  },
+  {
+    "title": "Well-aligned Vertically Oriented ZnO Nanorod Arrays and their Application in Inverted Small Molecule Solar Cells",
+    "authors": "Ming-Yi Lin, Shang-Hsuan Wu, Li-Jen Hsiao, Widhya Budiawan, Shih-Lun Chen, Wei-Chen Tu, Chia-Yen Lee, Yia-Chung Chang, Chih-Wei Chu",
+    "venue": "Journal of Visualized Experiments",
+    "year": 2018,
+    "type": "journal",
+    "award": "",
+    "impact": "Q2 (SJR)",
+    "metrics": {
+      "if": "",
+      "quartile": "Q2",
+      "quartile_source": "SJR",
+      "sjr": "0.409",
+      "citedness_2yr": 0.6
+    },
+    "tier": 2,
+    "score": 2,
+    "tier_reason": "SJR Q2",
+    "featured": false,
+    "links": {
+      "doi": "https://doi.org/10.3791/56149"
+    },
+    "bibtex": "@article{lin2018well,\n  title = {Well-aligned Vertically Oriented ZnO Nanorod Arrays and their Application in Inverted Small Molecule Solar Cells},\n  author = {Ming-Yi Lin and Shang-Hsuan Wu and Li-Jen Hsiao and Widhya Budiawan and Shih-Lun Chen and Wei-Chen Tu and Chia-Yen Lee and Yia-Chung Chang and Chih-Wei Chu},\n  year = {2018},\n  journal = {Journal of Visualized Experiments},\n  number = {134},\n  publisher = {MyJove Corporation},\n  doi = {10.3791/56149}\n}",
+    "hidden": true
+  },
+  {
+    "title": "Learning to Detect Fake Face Images in the Wild",
+    "authors": "Chih-Chung Hsu, Chia-Yen Lee, Yi-Xiu Zhuang",
+    "venue": "International Symposium on Computer, Consumer and Control (IS3C)",
+    "year": 2018,
+    "type": "conference",
+    "award": "",
+    "impact": "",
+    "metrics": {
+      "if": ""
+    },
+    "tier": 3,
+    "score": 3,
+    "tier_reason": "no CORE rank",
+    "featured": false,
+    "links": {
+      "doi": "https://doi.org/10.1109/IS3C.2018.00104"
+    },
+    "bibtex": "@inproceedings{hsu2018learning,\n  title = {Learning to Detect Fake Face Images in the Wild},\n  author = {Chih-Chung Hsu and Chia-Yen Lee and Yi-Xiu Zhuang},\n  year = {2018},\n  booktitle = {International Symposium on Computer, Consumer and Control (IS3C)},\n  publisher = {IEEE},\n  doi = {10.1109/IS3C.2018.00104}\n}"
+  },
+  {
+    "title": "Representative Feature Points Detection on Periapical X-ray Images",
+    "authors": "Chia-Yen Lee, Liang-Hsin Wang, Yu-Hsien Lin, Chih-Chia Huang",
+    "venue": "Sensors and Materials",
+    "year": 2018,
+    "type": "journal",
+    "award": "",
+    "impact": "Q3 (SJR)",
+    "metrics": {
+      "if": "",
+      "quartile": "Q3",
+      "quartile_source": "SJR",
+      "sjr": "0.230",
+      "citedness_2yr": 0.6
+    },
+    "tier": 3,
+    "score": 3,
+    "tier_reason": "no quartile",
+    "featured": false,
+    "links": {
+      "doi": "https://doi.org/10.18494/SAM.2018.2036"
+    },
+    "bibtex": "@article{lee2018representative,\n  title = {Representative Feature Points Detection on Periapical X-ray Images},\n  author = {Chia-Yen Lee and Liang-Hsin Wang and Yu-Hsien Lin and Chih-Chia Huang},\n  year = {2018},\n  journal = {Sensors and Materials},\n  volume = {30},\n  number = {11},\n  pages = {2445},\n  publisher = {MYU K.K.},\n  doi = {10.18494/SAM.2018.2036}\n}",
+    "hidden": true
+  },
+  {
+    "title": "Adaptive ultrasound temperature imaging for monitoring radiofrequency ablation",
+    "authors": "Yi-Da Liu, Qiang Li, Zhuhuang Zhou, Yao-Wen Yeah, Chien-Cheng Chang, Chia-Yen Lee, Po-Hsiang Tsui",
+    "venue": "PLOS ONE",
+    "year": 2017,
+    "type": "journal",
+    "award": "",
+    "impact": "Q1 (SJR)",
+    "metrics": {
+      "if": "",
+      "quartile": "Q1",
+      "quartile_source": "SJR",
+      "sjr": "0.726",
+      "citedness_2yr": 3.4
+    },
+    "tier": 1,
+    "score": 1.2,
+    "tier_reason": "SJR Q1",
+    "featured": false,
+    "links": {
+      "doi": "https://doi.org/10.1371/journal.pone.0182457"
+    },
+    "bibtex": "@article{liu2017adaptive,\n  title = {Adaptive ultrasound temperature imaging for monitoring radiofrequency ablation},\n  author = {Yi-Da Liu and Qiang Li and Zhuhuang Zhou and Yao-Wen Yeah and Chien-Cheng Chang and Chia-Yen Lee and Po-Hsiang Tsui},\n  year = {2017},\n  journal = {PLOS ONE},\n  volume = {12},\n  number = {8},\n  pages = {e0182457},\n  publisher = {Public Library of Science (PLoS)},\n  doi = {10.1371/journal.pone.0182457}\n}"
+  },
+  {
+    "title": "Automatic Marker-free Longitudinal Infrared Image Registration by Shape Context Based Matching and Competitive Winner-guided Optimal Corresponding",
+    "authors": "Chia-Yen Lee, Hao-Jen Wang, Jhih-Hao Lai, Yeun-Chung Chang, Chiun-Sheng Huang",
+    "venue": "Scientific Reports",
+    "year": 2017,
+    "type": "journal",
+    "award": "",
+    "impact": "Q1 (SJR)",
+    "metrics": {
+      "if": "",
+      "quartile": "Q1",
+      "quartile_source": "SJR",
+      "sjr": "0.893",
+      "citedness_2yr": 5.3
+    },
+    "tier": 1,
+    "score": 1.2,
+    "tier_reason": "SJR Q1",
+    "featured": false,
+    "links": {
+      "doi": "https://doi.org/10.1038/srep39834"
+    },
+    "bibtex": "@article{lee2017automatic,\n  title = {Automatic Marker-free Longitudinal Infrared Image Registration by Shape Context Based Matching and Competitive Winner-guided Optimal Corresponding},\n  author = {Chia-Yen Lee and Hao-Jen Wang and Jhih-Hao Lai and Yeun-Chung Chang and Chiun-Sheng Huang},\n  year = {2017},\n  journal = {Scientific Reports},\n  volume = {7},\n  number = {1},\n  publisher = {Springer Science and Business Media LLC},\n  doi = {10.1038/srep39834}\n}"
+  },
+  {
+    "title": "Performance analysis of new optical matrices for constructing two-dimensional temporal/spatial optical code-division multiple-access networks",
+    "authors": "Chia-Yen Lee, Yao-Tang Chang, Shin-Pin Tseng, Yi-Xuan Lu",
+    "venue": "Optical Engineering",
+    "year": 2017,
+    "type": "journal",
+    "award": "",
+    "impact": "Q3 (SJR)",
+    "metrics": {
+      "if": "",
+      "quartile": "Q3",
+      "quartile_source": "SJR",
+      "sjr": "0.301",
+      "citedness_2yr": 1.1
+    },
+    "tier": 3,
+    "score": 3,
+    "tier_reason": "no quartile",
+    "featured": false,
+    "links": {
+      "doi": "https://doi.org/10.1117/1.OE.56.4.040501"
+    },
+    "bibtex": "@article{lee2017performance,\n  title = {Performance analysis of new optical matrices for constructing two-dimensional temporal/spatial optical code-division multiple-access networks},\n  author = {Chia-Yen Lee and Yao-Tang Chang and Shin-Pin Tseng and Yi-Xuan Lu},\n  year = {2017},\n  journal = {Optical Engineering},\n  volume = {56},\n  number = {04},\n  pages = {1--4},\n  publisher = {SPIE-Intl Soc Optical Eng},\n  doi = {10.1117/1.OE.56.4.040501}\n}"
+  },
+  {
+    "title": "A GPU-Based Parallel Computing Framework for Accelerating the Reconstruction of q-Ball Imaging",
+    "authors": "Hong Che Lai, Chun Hung Yeh, Kuan Hung Cho, Ching Po Lin, Chia Yen Lee, Yi Ping Chao",
+    "venue": "International Symposium on Computer, Consumer and Control",
+    "year": 2014,
+    "type": "conference",
+    "award": "",
+    "impact": "",
+    "metrics": {
+      "if": ""
+    },
+    "tier": 3,
+    "score": 3,
+    "tier_reason": "no CORE rank",
+    "featured": false,
+    "links": {
+      "doi": "https://doi.org/10.1109/IS3C.2014.287"
+    },
+    "bibtex": "@inproceedings{lai2014based,\n  title = {A GPU-Based Parallel Computing Framework for Accelerating the Reconstruction of q-Ball Imaging},\n  author = {Hong Che Lai and Chun Hung Yeh and Kuan Hung Cho and Ching Po Lin and Chia Yen Lee and Yi Ping Chao},\n  year = {2014},\n  booktitle = {International Symposium on Computer, Consumer and Control},\n  publisher = {IEEE},\n  doi = {10.1109/IS3C.2014.287}\n}"
+  },
+  {
+    "title": "A Modified Harris Corner Detection for Breast IR Image",
+    "authors": "Chia-Yen Lee, Hao-Jen Wang, Chung-Ming Chen, Ching-Cheng Chuang, Yeun-Chung Chang, Nien-Shiang Chou",
+    "venue": "Mathematical Problems in Engineering",
+    "year": 2014,
+    "type": "journal",
+    "award": "",
+    "impact": "Q3 (SJR)",
+    "metrics": {
+      "if": "",
+      "quartile": "Q3",
+      "quartile_source": "SJR",
+      "sjr": "0.303",
+      "citedness_2yr": 2
+    },
+    "tier": 3,
+    "score": 3,
+    "tier_reason": "no quartile",
+    "featured": false,
+    "links": {
+      "doi": "https://doi.org/10.1155/2014/902659"
+    },
+    "bibtex": "@article{lee2014modified,\n  title = {A Modified Harris Corner Detection for Breast IR Image},\n  author = {Chia-Yen Lee and Hao-Jen Wang and Chung-Ming Chen and Ching-Cheng Chuang and Yeun-Chung Chang and Nien-Shiang Chou},\n  year = {2014},\n  journal = {Mathematical Problems in Engineering},\n  volume = {2014},\n  number = {1},\n  publisher = {Wiley},\n  doi = {10.1155/2014/902659}\n}"
+  },
+  {
+    "title": "Iterative Morphology-Based Segmentation of Breast Tumors in Ultrasound Images",
+    "authors": "Guan Lin Chen, Chia Yen Lee",
+    "venue": "International Symposium on Computer, Consumer and Control",
+    "year": 2014,
+    "type": "conference",
+    "award": "",
+    "impact": "",
+    "metrics": {
+      "if": ""
+    },
+    "tier": 3,
+    "score": 3,
+    "tier_reason": "no CORE rank",
+    "featured": false,
+    "links": {
+      "doi": "https://doi.org/10.1109/IS3C.2014.288"
+    },
+    "bibtex": "@inproceedings{chen2014iterative,\n  title = {Iterative Morphology-Based Segmentation of Breast Tumors in Ultrasound Images},\n  author = {Guan Lin Chen and Chia Yen Lee},\n  year = {2014},\n  booktitle = {International Symposium on Computer, Consumer and Control},\n  publisher = {IEEE},\n  doi = {10.1109/IS3C.2014.288}\n}"
+  },
+  {
+    "title": "Preoperative prediction of papillary thyroid carcinoma prognosis with the assistance of computerized morphometry of cytology samples obtained by fine‐needle aspiration: Preliminary report",
+    "authors": "Shyang–Rong Shih, Yi–Cheng Chang, Hung–Yuan Li, Jau–Yu Liau, Chia–Yen Lee, Chung–Ming Chen, Tien–Chun Chang",
+    "venue": "Head &amp; Neck",
+    "year": 2012,
+    "type": "journal",
+    "award": "",
+    "impact": "Q1 (SJR)",
+    "metrics": {
+      "if": "",
+      "quartile": "Q1",
+      "quartile_source": "SJR",
+      "sjr": "0.810",
+      "citedness_2yr": 2.2
+    },
+    "tier": 1,
+    "score": 1.2,
+    "tier_reason": "SJR Q1",
+    "featured": false,
+    "links": {
+      "doi": "https://doi.org/10.1002/hed.22909"
+    },
+    "bibtex": "@article{shih2012preoperative,\n  title = {Preoperative prediction of papillary thyroid carcinoma prognosis with the assistance of computerized morphometry of cytology samples obtained by fine‐needle aspiration: Preliminary report},\n  author = {Shyang–Rong Shih and Yi–Cheng Chang and Hung–Yuan Li and Jau–Yu Liau and Chia–Yen Lee and Chung–Ming Chen and Tien–Chun Chang},\n  year = {2012},\n  journal = {Head \\&amp; Neck},\n  volume = {35},\n  number = {1},\n  pages = {28--34},\n  publisher = {Wiley},\n  doi = {10.1002/hed.22909}\n}"
+  },
+  {
+    "title": "The Relationship between Thyrotropin Receptor Antibody Levels and Intrathyroid Vascularity in Patients with Graves’ Disease",
+    "authors": "S.-R. Shih, J.-S. Chang, L.-C. Lin, Y.-C. Chang, H.-Y. Li, C.-Y. Lee, C.-M. Chen, T.-C. Chang",
+    "venue": "Experimental and Clinical Endocrinology &amp; Diabetes",
+    "year": 2012,
+    "type": "journal",
+    "award": "",
+    "impact": "Q2 (SJR)",
+    "metrics": {
+      "if": "",
+      "quartile": "Q2",
+      "quartile_source": "SJR",
+      "sjr": "0.529",
+      "citedness_2yr": 1.7
+    },
+    "tier": 2,
+    "score": 2,
+    "tier_reason": "SJR Q2",
+    "featured": false,
+    "links": {
+      "doi": "https://doi.org/10.1055/s-0031-1297992"
+    },
+    "bibtex": "@article{shih2012relationship,\n  title = {The Relationship between Thyrotropin Receptor Antibody Levels and Intrathyroid Vascularity in Patients with Graves’ Disease},\n  author = {S.-R. Shih and J.-S. Chang and L.-C. Lin and Y.-C. Chang and H.-Y. Li and C.-Y. Lee and C.-M. Chen and T.-C. Chang},\n  year = {2012},\n  journal = {Experimental and Clinical Endocrinology \\&amp; Diabetes},\n  volume = {121},\n  number = {01},\n  pages = {1--5},\n  publisher = {Georg Thieme Verlag KG},\n  doi = {10.1055/s-0031-1297992}\n}"
+  },
+  {
+    "title": "Gibbs-weighted K-means segmentation approach with intensity inhomogeneity correction",
+    "authors": "",
+    "venue": "VISAPP - Proceedings of the International Conference on Computer Vision Theory and Applications",
+    "year": 2012,
+    "type": "conference",
+    "award": "",
+    "impact": "",
+    "metrics": {
+      "if": ""
+    },
+    "tier": 3,
+    "score": 3,
+    "tier_reason": "no CORE rank",
+    "featured": false,
+    "links": {},
+    "bibtex": "@inproceedings{aimlab2012gibbs,\n  title = {Gibbs-weighted K-means segmentation approach with intensity inhomogeneity correction},\n  year = {2012},\n  booktitle = {VISAPP - Proceedings of the International Conference on Computer Vision Theory and Applications}\n}"
+  },
+  {
+    "title": "Intensity inhomogeneity correction for the breast sonogram: Constrained fuzzy cell‐based bipartitioning and polynomial surface modeling",
+    "authors": "Chia‐Yen Lee, Yi‐Hong Chou, Chiun‐Sheng Huang, Yeun‐Chung Chang, Chui‐Mei Tiu, Chung‐Ming Chen",
+    "venue": "Medical Physics",
+    "year": 2010,
+    "type": "journal",
+    "award": "",
+    "impact": "Q1 (SJR)",
+    "metrics": {
+      "if": "",
+      "quartile": "Q1",
+      "quartile_source": "SJR",
+      "sjr": "0.949",
+      "citedness_2yr": 2.9
+    },
+    "tier": 1,
+    "score": 1.2,
+    "tier_reason": "SJR Q1",
+    "featured": false,
+    "links": {
+      "doi": "https://doi.org/10.1118/1.3488944"
+    },
+    "bibtex": "@article{lee2010intensity,\n  title = {Intensity inhomogeneity correction for the breast sonogram: Constrained fuzzy cell‐based bipartitioning and polynomial surface modeling},\n  author = {Chia‐Yen Lee and Yi‐Hong Chou and Chiun‐Sheng Huang and Yeun‐Chung Chang and Chui‐Mei Tiu and Chung‐Ming Chen},\n  year = {2010},\n  journal = {Medical Physics},\n  volume = {37},\n  number = {11},\n  pages = {5645--5654},\n  publisher = {Wiley},\n  doi = {10.1118/1.3488944}\n}"
+  },
+  {
+    "title": "High-fidelity evoked potential for mapping the rat tail in thalamus",
+    "authors": "F.-S. Jaw, Y.-C. Kao, C.-P. Chen, C.-Y. Lee, Y.-Y. Chen",
+    "venue": "Neuroscience",
+    "year": 2008,
+    "type": "journal",
+    "award": "",
+    "impact": "Q2 (SJR)",
+    "metrics": {
+      "if": "",
+      "quartile": "Q2",
+      "quartile_source": "SJR",
+      "sjr": "0.900",
+      "citedness_2yr": 3
+    },
+    "tier": 2,
+    "score": 2,
+    "tier_reason": "SJR Q2",
+    "featured": false,
+    "links": {
+      "doi": "https://doi.org/10.1016/j.neuroscience.2008.05.034"
+    },
+    "bibtex": "@article{jaw2008high,\n  title = {High-fidelity evoked potential for mapping the rat tail in thalamus},\n  author = {F.-S. Jaw and Y.-C. Kao and C.-P. Chen and C.-Y. Lee and Y.-Y. Chen},\n  year = {2008},\n  journal = {Neuroscience},\n  volume = {155},\n  number = {1},\n  pages = {277--282},\n  publisher = {Elsevier BV},\n  doi = {10.1016/j.neuroscience.2008.05.034}\n}"
+  },
+  {
+    "title": "Segmentation of sonographic breast lesions: fuzzy cell-competition algorithm and bias field reduction",
+    "authors": "Chia-Yen Lee, Chi-Chun Hsieh, Chung-Ming Chen",
+    "venue": "SPIE Proceedings",
+    "year": 2008,
+    "type": "conference",
+    "award": "",
+    "impact": "",
+    "metrics": {
+      "if": ""
+    },
+    "tier": 3,
+    "score": 3,
+    "tier_reason": "no CORE rank",
+    "featured": false,
+    "links": {
+      "doi": "https://doi.org/10.1117/12.770884"
+    },
+    "bibtex": "@inproceedings{lee2008segmentation,\n  title = {Segmentation of sonographic breast lesions: fuzzy cell-competition algorithm and bias field reduction},\n  author = {Chia-Yen Lee and Chi-Chun Hsieh and Chung-Ming Chen},\n  year = {2008},\n  booktitle = {SPIE Proceedings},\n  publisher = {SPIE},\n  doi = {10.1117/12.770884}\n}"
+  },
+  {
+    "title": "Spatiotemporal sharpening of sub-pixel super-resolution by means of two infrared spectrum cameras for early cancer detection",
+    "authors": "Chia-Yen Lee, Hsin-Yu Hsieh, Si-Chen Lee, Chiun-Sheng Huang, Yeun-Chung Chang, Chung-Ming Chen, Harold Szu",
+    "venue": "SPIE Proceedings",
+    "year": 2008,
+    "type": "conference",
+    "award": "",
+    "impact": "",
+    "metrics": {
+      "if": ""
+    },
+    "tier": 3,
+    "score": 3,
+    "tier_reason": "no CORE rank",
+    "featured": false,
+    "links": {
+      "doi": "https://doi.org/10.1117/12.793385"
+    },
+    "bibtex": "@inproceedings{lee2008spatiotemporal,\n  title = {Spatiotemporal sharpening of sub-pixel super-resolution by means of two infrared spectrum cameras for early cancer detection},\n  author = {Chia-Yen Lee and Hsin-Yu Hsieh and Si-Chen Lee and Chiun-Sheng Huang and Yeun-Chung Chang and Chung-Ming Chen and Harold Szu},\n  year = {2008},\n  booktitle = {SPIE Proceedings},\n  publisher = {SPIE},\n  doi = {10.1117/12.793385}\n}"
+  }
+]

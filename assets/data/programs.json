@@ -1,0 +1,53 @@
+[
+  {
+    "id": "rppg",
+    "title": "rPPG Program",
+    "title_zh": "非接觸式生理訊號量測",
+    "track": "frontier",
+    "tagline": "Contactless measurement of physiological signals from face video with an ordinary camera.",
+    "tagline_zh": "用一般攝影機從臉部影像做非接觸式生理訊號量測。",
+    "tags": [
+      "rPPG",
+      "Signal Quality",
+      "HRV",
+      "Multimodal Interaction"
+    ],
+    "lead": "Meng-Ching Chen",
+    "featured": true,
+    "live": "rppg"
+  },
+  {
+    "id": "mllm",
+    "title": "MLLM Program",
+    "title_zh": "多模態情緒理解與同理回應",
+    "track": "frontier",
+    "tagline": "Multimodal language models that read face, voice and physiology to recognize emotion and respond with empathy.",
+    "tagline_zh": "讀取臉部、語音與生理訊號的多模態語言模型，辨識情緒並以同理心回應。",
+    "tags": [
+      "MLLM",
+      "Emotion AI",
+      "Empathic Generation",
+      "Physiology-aware"
+    ],
+    "lead": "Xin-You Song",
+    "featured": true,
+    "live": "mllm"
+  },
+  {
+    "id": "cag",
+    "title": "CAG Program",
+    "title_zh": "冠狀動脈攝影 AI 判讀",
+    "track": "clinical",
+    "tagline": "Reads coronary angiograms in the order cardiologists do and drafts a standardized, traceable report.",
+    "tagline_zh": "依醫師判讀順序分析冠狀動脈攝影，產出可追溯、標準化的診斷報告草稿。",
+    "tags": [
+      "CAG",
+      "Medical Imaging",
+      "Clinical AI"
+    ],
+    "lead": "Yu-Hao Liu",
+    "img": "assets/img/programs/cag-cover.jpg",
+    "featured": true,
+    "pulse_layer": "assets/img/programs/cag-vessels.png"
+  }
+]

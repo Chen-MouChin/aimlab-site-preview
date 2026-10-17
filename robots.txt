@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+
+Sitemap: https://chen-mouchin.github.io/aimlab-site-preview/sitemap.xml

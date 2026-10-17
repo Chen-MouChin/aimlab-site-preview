@@ -1,0 +1,84 @@
+{
+  "_readme": "Detail data for program.html?id=rppg. Public-facing text follows the rPPG Program disclosure scope: concepts only, no methods, numbers, datasets, papers or internal names.",
+  "id": "rppg",
+  "track": "frontier",
+  "hero": {
+    "label": "Frontier AI · rPPG Program",
+    "label_zh": "Frontier AI · rPPG 計畫",
+    "title": "rPPG Program",
+    "title_zh": "rPPG 計畫",
+    "subtitle": "Contactless physiological sensing from face video",
+    "subtitle_zh": "從臉部影像做非接觸式生理量測",
+    "tagline": "An ongoing frontier research program: estimating heart rate and related physiological indicators from the subtle color changes of the face, while judging when a measurement can be trusted.",
+    "tagline_zh": "進行中的前沿研究計畫：從臉部細微的顏色變化估計心率與相關生理指標，並判斷一次量測何時可以信任。",
+    "badges": [
+      "rPPG",
+      "Signal-quality aware",
+      "Head-motion robust",
+      "HRV",
+      "Multimodal"
+    ],
+    "links": {
+      "demo": "demo/rppg-monitor.html"
+    }
+  },
+  "overview": {
+    "summary": "The rPPG Program studies how an ordinary camera can measure physiological signals without touching the body. Every heartbeat slightly changes the color of facial skin; remote photoplethysmography (rPPG) reads that change from video to estimate heart rate. The program focuses on making such measurements trustworthy in everyday conditions and on what they can tell us about cardiovascular and autonomic health.",
+    "summary_zh": "rPPG 計畫研究一般攝影機如何在不接觸身體的情況下量測生理訊號。每一次心跳都會讓臉部皮膚的顏色些微改變；遠距光體積變化描記法（rPPG）從影片讀出這個變化來估計心率。本計畫著重讓這類量測在日常環境下值得信任，以及它們能告訴我們哪些關於心血管與自律神經健康的訊息。",
+    "focus": [
+      "Remote photoplethysmography (rPPG): estimating heart rate from facial color changes captured by a camera, without any contact.",
+      "Signal quality-aware measurement: actively judging how trustworthy a measurement is under poor conditions, and withholding unreliable values instead of reporting them.",
+      "Head-motion robustness: keeping the measurement stable while the person moves naturally.",
+      "Heart rate variability (HRV): assessing autonomic-nervous-system related indicators from a contactless signal.",
+      "Heart failure risk assessment: combining contactless physiological signals with readily available clinical data.",
+      "Multimodal interactive system: human-computer interaction that combines physiological information with emotion-aware feedback."
+    ],
+    "focus_zh": [
+      "遠距光體積變化描記法（rPPG）：從攝影機拍到的臉部顏色變化估計心率，完全不需接觸。",
+      "訊號品質感知量測：在條件不佳時主動判斷量測的可信度，寧可不報也不輸出不可靠的數值。",
+      "頭部動作強健性：在人自然移動時仍維持穩定的量測。",
+      "心率變異（HRV）：從非接觸訊號評估與自律神經系統相關的指標。",
+      "心衰竭風險評估：結合非接觸式生理訊號與容易取得的臨床資料。",
+      "多模態互動系統：結合生理資訊與情緒感知回饋的人機互動。"
+    ],
+    "lead": "Meng-Ching Chen",
+    "members": [
+      "Meng-Ching Chen",
+      "Sheng-Bi Chen",
+      "Yu-Fang Tseng"
+    ]
+  },
+  "demos": [
+    {
+      "title": "Contactless pulse monitor: what the person sees",
+      "title_zh": "非接觸式脈搏監測：受測者看到的畫面",
+      "type": "page",
+      "src": "demo/rppg-monitor.html",
+      "caption": "Interactive mock of the subject-facing display: a sweeping pulse trace, honest Live / Holding / Paused states, and a session report built only from windows that could be measured. Simulated signal; no camera is used.",
+      "caption_zh": "受測者端顯示介面的互動模擬：掃描式脈搏波形、誠實的「即時／保留上一值／暫停」狀態，以及只用可量測時段建立的報告。訊號為模擬，不使用攝影機。"
+    }
+  ],
+  "method": {
+    "title": "Why it matters",
+    "title_zh": "為什麼重要",
+    "paragraphs": [
+      "Heart rate and its variability are among the most informative vital signs, yet measuring them usually requires a sensor attached to the body. A camera-based method removes that barrier: it can be used in a consultation room, at home, or during a video call, without wires or skin contact. That helps people with fragile skin, supports infection control, and makes repeated monitoring over time practical.",
+      "The difficulty is reliability. The pulse signal in facial video is tiny and easily disturbed by movement, lighting and camera behavior. Rather than reporting a number in every condition, our research emphasizes recognizing when a measurement is valid, so that its output can be used safely by people and by downstream AI systems.",
+      "Within AIMLab, the rPPG Program provides the physiological sensing layer for human-centered AI. Combined with emotion recognition and large language models, contactless physiology can give conversational and care-support systems a fuller picture of a person’s state. These directions are ongoing, forward-looking research."
+    ],
+    "paragraphs_zh": [
+      "心率及其變異是資訊量最高的生命徵象之一，但量測通常需要貼在身上的感測器。以攝影機為基礎的方法移除了這道門檻：在診間、家裡或視訊通話中都能使用，不需要線材或皮膚接觸。這對皮膚脆弱的人有幫助，有利於感染管制，也讓長期重複監測變得可行。",
+      "困難在於可靠性。臉部影像中的脈搏訊號極為微弱，很容易被動作、光線與攝影機行為干擾。我們的研究不追求在任何情況下都報出一個數字，而是強調辨識量測何時有效，讓輸出能被人與下游 AI 系統安全地使用。",
+      "在 AIMLab 中，rPPG 計畫是以人為本 AI 的生理感測層。結合情緒辨識與大型語言模型後，非接觸式生理訊號能讓對話與照護支援系統更完整地掌握一個人的狀態。這些方向都是進行中、面向未來的研究。"
+    ]
+  },
+  "team": [
+    "Meng-Ching Chen",
+    "Sheng-Bi Chen",
+    "Yu-Fang Tseng"
+  ],
+  "related": [
+    "mllm"
+  ],
+  "visuals": "rppg"
+}

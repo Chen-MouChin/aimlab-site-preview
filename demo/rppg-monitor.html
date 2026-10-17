@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-zh="非接觸式脈搏監測 · 互動展示 | 人工智慧醫學實驗室">Contactless Pulse Monitor · Demo | AIMLab</title>
+<meta name="description" content="Interactive demo of the AIMLab rPPG program's subject-facing display: a sweeping pulse waveform on ECG-style grid, honest state handling, and a session report. Simulated signal, not a medical device.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="../favicon.ico" sizes="32x32">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;700&display=swap">
+<script>
+  // Language follows the site switch (localStorage "aim_lang", shared with program.html, which embeds this page).
+  (function () { var l = 'en'; try { l = localStorage.getItem('aim_lang') === 'zh' ? 'zh' : 'en'; } catch (e) {} document.documentElement.dataset.lang = l; document.documentElement.lang = l === 'zh' ? 'zh-Hant' : 'en'; })();
+</script>
+<style>
+/* Standalone demo page. Uses the AIMLab design tokens (same values as assets/css/style.css)
+   so it can be embedded in program.html or opened on its own. No external data, no network:
+   every number on this page is simulated. */
+:root{
+  --blue-900:#08306b; --blue-800:#0b3b8f; --blue-700:#0b5bd3; --green-600:#16a34a; --amber-600:#b45309;
+  --text-900:#0f172a; --text-700:#334155; --text-500:#64748b;
+  --bg:#ffffff; --bg-soft:#f6f9ff; --card:#ffffff; --border:#e6eefc;
+  --grid-minor:#dfe9fb; --grid-major:#b9cff5; --trace:#0b5bd3;
+  --radius:14px; --num:ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  color-scheme:light;
+}
+
+*{ box-sizing:border-box; }
+[hidden]{ display:none !important; }
+html,body{ margin:0; }
+body{ background:var(--bg); color:var(--text-900); font-family:'Plus Jakarta Sans', 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', system-ui, sans-serif; line-height:1.55; }
+/* Every label is rendered in both languages; <html data-lang> shows one (same rule as the site). */
+html[data-lang="en"] .t-zh, html[data-lang="zh"] .t-en{ display:none !important; }
+html[data-lang="zh"] .lbl{ letter-spacing:.08em; }
+.lang-toggle{ display:inline-flex; gap:2px; padding:3px; border:1px solid var(--border); border-radius:999px; }
+.lang-toggle button{ border:0; background:transparent; font:inherit; font-size:.78rem; font-weight:700; padding:3px 10px; border-radius:999px; color:var(--text-500); cursor:pointer; }
+.lang-toggle button[aria-pressed="true"]{ background:var(--blue-700); color:#fff; }
+.bar-tools{ display:flex; align-items:center; gap:12px; }
+.wrap{ max-width:900px; margin:0 auto; padding:20px 16px 40px; display:grid; gap:16px; }
+.bar{ display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:8px 16px; }
+.bar h1{ font-size:1.05rem; margin:0; font-weight:800; letter-spacing:-0.01em; }
+.bar .sub{ font-size:.8rem; color:var(--text-500); }
+.bar a{ color:var(--blue-700); text-decoration:none; font-weight:600; font-size:.85rem; }
+.bar a:hover{ text-decoration:underline; }
+.box{ background:var(--card); border:1px solid var(--border); border-radius:var(--radius); padding:18px; display:grid; gap:12px; min-width:0; }
+.top{ display:flex; flex-wrap:wrap; justify-content:space-between; align-items:flex-end; gap:10px 20px; }
+.lbl{ font-size:.78rem; color:var(--text-500); letter-spacing:.04em; text-transform:uppercase; font-weight:700; }
+.hr{ display:flex; align-items:baseline; gap:8px; }
+.hr b{ font-family:var(--num); font-weight:600; font-size:clamp(3rem, 9vw, 4.4rem); line-height:1; font-variant-numeric:tabular-nums; transition:opacity .3s; }
+.hr span{ color:var(--text-500); font-size:1rem; }
+.hr.faded b{ opacity:.45; }
+.chips{ display:flex; flex-wrap:wrap; gap:8px; align-items:center; }
+.chip{ font-size:.82rem; padding:3px 10px; border-radius:999px; border:1px solid currentColor; font-weight:600; }
+.chip.live{ color:var(--green-600); } .chip.holding{ color:var(--blue-700); } .chip.paused{ color:var(--amber-600); }
+.tag{ font-size:.8rem; color:var(--text-500); }
+.panel{ position:relative; border:1px solid var(--border); border-radius:8px; overflow:hidden; }
+canvas{ display:block; width:100%; height:180px; }
+.notice{ position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); width:min(88%, 440px);
+  background:var(--card); border:2px solid var(--amber-600); border-radius:12px; padding:12px 16px; font-size:1.15rem; text-align:center; line-height:1.4; }
+.notice strong{ display:block; font-size:.9rem; color:var(--amber-600); }
+.beat{ position:absolute; inset:0; display:grid; place-items:center; }
+.beat i{ width:64px; height:64px; border-radius:50%; background:var(--trace); transform:scale(.7); transition:transform .12s ease-out; display:block; }
+.beat i.on{ transform:scale(1); }
+.beat.off i{ background:var(--text-500); opacity:.35; }
+.foot{ display:flex; flex-wrap:wrap; gap:6px 16px; justify-content:space-between; color:var(--text-500); font-size:.82rem; }
+.controls{ display:grid; gap:10px; }
+.row{ display:flex; flex-wrap:wrap; gap:8px; align-items:center; }
+.row > span{ min-width:6.5em; color:var(--text-500); font-size:.85rem; font-weight:600; }
+button{ font:inherit; font-size:.88rem; padding:6px 12px; border-radius:8px; border:1px solid var(--border); background:var(--card); color:var(--text-900); cursor:pointer; }
+button[aria-pressed="true"]{ border-color:var(--blue-700); color:var(--blue-700); font-weight:700; }
+button:focus-visible{ outline:2px solid var(--blue-700); outline-offset:2px; }
+.cols{ display:grid; gap:16px; grid-template-columns:1fr; }
+@media (min-width:760px){ .cols{ grid-template-columns:1.4fr 1fr; } }
+.kv{ display:grid; grid-template-columns:auto 1fr; gap:4px 14px; font-size:.92rem; margin:0; }
+.kv dt{ color:var(--text-500); } .kv dd{ margin:0; font-variant-numeric:tabular-nums; }
+.meter{ height:10px; border-radius:5px; background:var(--bg-soft); overflow:hidden; }
+.meter i{ display:block; height:100%; background:var(--green-600); transition:width .3s; }
+.primary{ justify-self:start; border-color:var(--blue-700); background:var(--blue-700); color:#fff; font-weight:700; }
+.primary:hover{ filter:brightness(1.08); }
+.note{ font-size:.82rem; color:var(--text-500); margin:0; }
+.small-label{ font-size:.78rem; border:1px solid var(--border); border-radius:6px; padding:2px 8px; color:var(--text-500); justify-self:start; }
+svg text{ fill:var(--text-500); font-size:10px; font-family:inherit; }
+.principles{ display:grid; gap:6px; font-size:.9rem; color:var(--text-700); margin:0; padding-left:1.1em; }
+@media (prefers-reduced-motion: reduce){ .hr b, .beat i, .meter i{ transition:none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="bar">
+    <div>
+      <h1><span class="t-en">Contactless Pulse Monitor</span><span class="t-zh">非接觸式脈搏監測</span> <span class="tag"><span class="t-en">· interactive demo</span><span class="t-zh">· 互動展示</span></span></h1>
+      <div class="sub"><span class="t-en">Simulated signal for illustration · not a medical device · no camera is used on this page · built by</span><span class="t-zh">模擬訊號，僅供說明 · 非醫療器材 · 本頁不使用攝影機 · 製作：</span> <a href="https://github.com/Chen-MouChin" target="_blank" rel="noopener noreferrer">Chen-MouChin</a></div>
+    </div>
+    <div class="bar-tools">
+      <div class="lang-toggle" id="langToggle" role="group" aria-label="Language">
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        <button type="button" data-lang="zh" aria-pressed="false">中文</button>
+      </div>
+      <a href="../program.html?id=rppg" id="backLink"><span class="t-en">← rPPG Program</span><span class="t-zh">← rPPG 計畫</span></a>
+    </div>
+  </header>
+
+  <!-- Live monitor -->
+  <section class="box" aria-label="Heart-rate monitor">
+    <div class="top">
+      <div><div class="lbl"><span class="t-en">Heart rate (approx.)</span><span class="t-zh">心率（約略值）</span></div><div class="hr" id="hrBox"><b id="hrVal">72</b><span>bpm</span></div></div>
+      <div class="chips"><span class="chip live" id="tier"></span><span class="tag" id="status"></span></div>
+    </div>
+    <div class="panel">
+      <canvas id="cv" aria-label="Pulse waveform sweeping left to right"></canvas>
+      <div class="beat" id="beat" hidden><i id="dot"></i></div>
+      <div class="notice" id="notice" hidden></div>
+    </div>
+    <div class="foot"><span id="tplLabel"></span><span><span class="t-en">Paper speed 25 mm/s</span><span class="t-zh">走紙速度 25 mm/s</span></span></div>
+  </section>
+
+  <!-- Controls -->
+  <section class="controls" aria-label="Demo controls">
+    <div class="row" role="group" aria-label="Waveform template"><span><span class="t-en">Template</span><span class="t-zh">波形</span></span>
+      <button data-tpl="pulse" aria-pressed="true"><span class="t-en">Pulse wave</span><span class="t-zh">脈搏波</span></button>
+      <button data-tpl="ecg_like" aria-pressed="false"><span class="t-en">ECG-like</span><span class="t-zh">類心電圖</span></button>
+      <button data-tpl="beat_dot" aria-pressed="false"><span class="t-en">Beat dot</span><span class="t-zh">心跳圓點</span></button>
+    </div>
+    <div class="row" role="group" aria-label="Display state"><span><span class="t-en">State</span><span class="t-zh">狀態</span></span>
+      <button data-st="auto" aria-pressed="true"><span class="t-en">Play scenario</span><span class="t-zh">播放情境</span></button>
+      <button data-st="live" aria-pressed="false"><span class="t-en">Live</span><span class="t-zh">即時</span></button>
+      <button data-st="holding" aria-pressed="false"><span class="t-en">Holding</span><span class="t-zh">保留上一值</span></button>
+      <button data-st="paused" aria-pressed="false"><span class="t-en">Paused</span><span class="t-zh">暫停</span></button>
+      <button id="freeze" aria-pressed="false"><span class="t-en">Freeze</span><span class="t-zh">凍結畫面</span></button>
+    </div>
+    <p class="note"><span class="t-en">Scenario loop: live → when the signal is not good enough, the last value is held briefly → the display pauses and asks the user to adjust → measurement resumes once conditions recover. While paused the trace is <b>not drawn at all</b>, because a flat line could be mistaken for a stopped heart: the sweep stops, only the grid remains, and the instruction is shown large and centered. On recovery the sweep restarts from the left.</span><span class="t-zh">情境循環：即時量測 → 訊號不夠好時短暫保留上一個數值 → 畫面暫停並請使用者調整 → 條件恢復後重新量測。暫停時<b>完全不畫波形</b>，因為一條平線可能被誤認為心跳停止：掃描停止、只留格線，指示以大字置中顯示。恢復後掃描從左側重新開始。</span></p>
+  </section>
+
+  <!-- Session + report -->
+  <div class="cols">
+    <section class="box" aria-label="This session">
+      <div class="lbl"><span class="t-en">This session</span><span class="t-zh">本次量測</span></div>
+      <dl class="kv">
+        <dt><span class="t-en">Elapsed</span><span class="t-zh">經過時間</span></dt><dd id="elapsed">0 s</dd>
+        <dt><span class="t-en">Valid share</span><span class="t-zh">有效比例</span></dt><dd id="validPct">—</dd>
+      </dl>
+      <div class="meter" aria-hidden="true"><i id="validBar" style="width:0%"></i></div>
+      <p class="note"><span class="t-en">The live number is an approximation. The session is recomputed after it ends; the report is the figure to trust.</span><span class="t-zh">即時數字只是約略值。量測結束後會重新計算整段資料，請以報告為準。</span></p>
+      <button class="primary" id="end" type="button"><span class="t-en">End session</span><span class="t-zh">結束量測</span></button>
+    </section>
+
+    <section class="box" id="report" hidden aria-label="Session report">
+      <div class="lbl"><span class="t-en">Session report</span><span class="t-zh">量測報告</span></div>
+      <div class="hr"><b id="repMean">—</b><span><span class="t-en">bpm · mean of valid windows</span><span class="t-zh">bpm · 有效時段平均</span></span></div>
+      <dl class="kv">
+        <dt><span class="t-en">Length</span><span class="t-zh">長度</span></dt><dd id="repLen">—</dd>
+        <dt><span class="t-en">Valid windows</span><span class="t-zh">有效時段</span></dt><dd id="repValid">—</dd>
+      </dl>
+      <svg id="dots" viewBox="0 0 300 110" role="img" aria-label="Per-window heart rate; hollow circles are windows that could not be measured">
+        <line x1="22" y1="92" x2="296" y2="92" stroke="currentColor" stroke-opacity=".18"/>
+        <g id="dotsG"></g>
+      </svg>
+      <p class="note"><span class="t-en">● valid &nbsp; ○ could not measure</span><span class="t-zh">● 有效 &nbsp; ○ 無法量測</span></p>
+      <span class="small-label"><span class="t-en">For reference only · not a diagnosis</span><span class="t-zh">僅供參考 · 非醫療診斷</span></span>
+    </section>
+  </div>
+
+  <section class="box" aria-label="Design principles">
+    <div class="lbl"><span class="t-en">Display principles</span><span class="t-zh">顯示原則</span></div>
+    <ul class="principles">
+      <li><span class="t-en"><b>Never fake a signal.</b> When the measurement is unavailable the number becomes “—” and nothing is drawn.</span><span class="t-zh"><b>絕不假造訊號。</b>無法量測時數字顯示為「—」，也不畫任何波形。</span></li>
+      <li><span class="t-en"><b>Show uncertainty honestly.</b> A held value is faded; it is never presented as fresh.</span><span class="t-zh"><b>誠實呈現不確定性。</b>保留中的數值會變淡，絕不假裝是最新的。</span></li>
+      <li><span class="t-en"><b>Tell the user what to do, not what went wrong.</b> Instructions are short, actionable and centered on the panel.</span><span class="t-zh"><b>告訴使用者該做什麼，而不是哪裡出錯。</b>指示簡短、可執行，並置中顯示在畫面上。</span></li>
+      <li><span class="t-en"><b>Report from valid data only.</b> The session mean ignores windows that could not be measured, and says so.</span><span class="t-zh"><b>只用有效資料做報告。</b>平均值會排除無法量測的時段，並明確說明。</span></li>
+    </ul>
+  </section>
+</div>
+
+<script>
+(() => {
+  const $ = id => document.getElementById(id);
+  const cv = $('cv'), ctx = cv.getContext('2d');
+  const tok = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // ---- tunables ----
+  const WINDOW_S = 10;                 // one "window" of the session
+  const LOOP = { live: 12, hold: 3, pause: 9, total: 36 };   // demo pacing only; unrelated to any real display rule
+  const PAPER_MM_PER_S = 25;
+  // ---- language: follows the site switch; L(en, zh) picks the current one ----
+  const langOf = () => (document.documentElement.dataset.lang === 'zh' ? 'zh' : 'en');
+  const L = (en, zh) => (langOf() === 'zh' ? zh : en);
+  const TPL_LABEL = {
+    pulse: ['Pulse illustration · beat follows the displayed rate, not the rhythm', '脈搏示意 · 跳動跟隨顯示的心率，不代表心律'],
+    ecg_like: ['Illustration, not an ECG · beat follows the displayed rate, not the rhythm', '示意圖，不是心電圖 · 跳動跟隨顯示的心率，不代表心律'],
+    beat_dot: ['Beat dot · follows the displayed rate', '心跳圓點 · 跟隨顯示的心率']
+  };
+  const INSTRUCTION = { low_quality: [['Measurement paused', '量測暫停'], ['Adjust your position and hold still', '請調整位置並保持不動']] };
+
+  let tpl = 'pulse', mode = 'auto', frozen = false;
+  let W = 0, H = 0, pxPerMm = 4, x = 0, prevY = null, phase = 0, clock = 0, last = performance.now();
+  let st = { status: 'live', hr: 72, held: 0, reason: null }, prevStatus = 'live';
+  let windows = [], winStart = 0, winHr = [], winBad = 0, ended = false;
+
+  function resize() {
+    const d = devicePixelRatio || 1;
+    W = cv.clientWidth; H = cv.clientHeight;
+    cv.width = W * d; cv.height = H * d; ctx.setTransform(d, 0, 0, d, 0, 0);
+    pxPerMm = Math.max(3, Math.min(5, W / 160));
+    grid(0, W); x = 0; prevY = null;
+    if (reduced) staticTrace();
+  }
+  function grid(x0, x1) {
+    ctx.fillStyle = tok('--card'); ctx.fillRect(x0, 0, x1 - x0, H);
+    const m = pxPerMm;
+    for (let gx = Math.floor(x0 / m) * m; gx <= x1; gx += m) {
+      ctx.strokeStyle = tok(Math.round(gx / m) % 5 ? '--grid-minor' : '--grid-major'); ctx.lineWidth = 1;
+      ctx.beginPath(); ctx.moveTo(gx + .5, 0); ctx.lineTo(gx + .5, H); ctx.stroke();
+    }
+    for (let gy = 0; gy <= H; gy += m) {
+      ctx.strokeStyle = tok(Math.round(gy / m) % 5 ? '--grid-minor' : '--grid-major');
+      ctx.beginPath(); ctx.moveTo(x0, gy + .5); ctx.lineTo(x1, gy + .5); ctx.stroke();
+    }
+  }
+  const g = (p, c, w) => Math.exp(-(((p - c) / w) ** 2));
+  function wave(p) {
+    if (tpl === 'ecg_like') return .12 * g(p, .12, .035) - .12 * g(p, .235, .012) + 1.0 * g(p, .26, .014) - .25 * g(p, .285, .014) + .28 * g(p, .5, .06);
+    return .95 * g(p, .17, .06) + .5 * g(p, .25, .09) + .32 * g(p, .45, .06);   // pulse wave with dicrotic notch
+  }
+  function staticTrace() {
+    // reduced-motion: one full static cycle instead of a sweep
+    grid(0, W); ctx.strokeStyle = tok('--trace'); ctx.lineWidth = 2; ctx.beginPath();
+    for (let i = 0; i <= W; i++) { const y = H * .62 - H * .42 * wave((i / W * 3) % 1); i ? ctx.lineTo(i, y) : ctx.moveTo(i, y); }
+    ctx.stroke();
+  }
+  function scenario(t) {
+    const c = t % LOOP.total;
+    if (c < LOOP.live) return { status: 'live', hr: 72 + 3 * Math.sin(t / 6), held: 0, reason: null };
+    if (c < LOOP.live + LOOP.hold) return { status: 'holding', hr: st.hr, held: c - LOOP.live, reason: 'low_quality' };
+    if (c < LOOP.live + LOOP.hold + LOOP.pause) return { status: 'paused', hr: null, held: 0, reason: 'low_quality' };
+    return { status: 'live', hr: 74 + 2 * Math.sin(t / 5), held: 0, reason: null, recovered: true };
+  }
+  function render() {
+    const s = st;
+    $('hrVal').textContent = s.status === 'paused' ? '—' : Math.round(s.hr);
+    $('hrBox').classList.toggle('faded', s.status === 'holding');
+    const tier = $('tier');
+    tier.className = 'chip ' + (s.status === 'live' ? 'live' : s.status === 'holding' ? 'holding' : 'paused');
+    tier.textContent = s.status === 'live' ? (s.recovered ? L('Live · recovered', '即時 · 已恢復') : L('Live', '即時')) : s.status === 'holding' ? L('Holding', '保留上一值') : L('Paused', '暫停');
+    $('status').textContent = s.status === 'live' ? L('real-time', '即時更新') : s.status === 'holding' ? L('last value held', '顯示上一個數值') : L('number withheld', '不顯示數值');
+    const n = $('notice');
+    if (s.status === 'paused') { const [t, m] = INSTRUCTION[s.reason] || [['', ''], ['', '']]; n.hidden = false; n.innerHTML = `<strong>${L(...t)}</strong>${L(...m)}`; } else n.hidden = true;
+    $('beat').hidden = tpl !== 'beat_dot'; $('beat').classList.toggle('off', s.status === 'paused');
+    $('tplLabel').textContent = L(...TPL_LABEL[tpl]);
+    // session stats
+    const valid = windows.filter(w => w.hr != null).length;
+    $('elapsed').textContent = L(`${Math.floor(clock)} s`, `${Math.floor(clock)} 秒`);
+    $('validPct').textContent = windows.length ? `${Math.round(valid / windows.length * 100)}%` : '—';
+    $('validBar').style.width = windows.length ? `${valid / windows.length * 100}%` : '0%';
+  }
+  function trackWindow(dt) {
+    if (ended) return;
+    if (st.status === 'live') winHr.push(st.hr); else winBad += dt;
+    if (clock - winStart >= WINDOW_S) {
+      const ok = winBad < WINDOW_S * .3 && winHr.length;
+      windows.push({ hr: ok ? winHr.reduce((a, b) => a + b, 0) / winHr.length : null });
+      winStart = clock; winHr = []; winBad = 0;
+    }
+  }
+  function step(now) {
+    const dt = Math.min(.1, (now - last) / 1000); last = now;
+    if (!frozen && !reduced) {
+      clock += dt;
+      if (mode === 'auto') st = scenario(clock);
+      else if (mode === 'holding') st = { status: 'holding', hr: 72, held: (st.held || 0) + dt, reason: 'low_quality' };
+      trackWindow(dt);
+      const hr = st.hr || 72, p0 = phase; phase = (phase + dt * hr / 60) % 1;
+      if (p0 > phase && tpl === 'beat_dot' && st.status !== 'paused') { const d = $('dot'); d.classList.add('on'); setTimeout(() => d.classList.remove('on'), 140); }
+      if (st.status === 'paused') {
+        if (prevStatus !== 'paused') { grid(0, W); x = 0; prevY = null; }
+        prevStatus = 'paused'; render(); requestAnimationFrame(step); return;
+      }
+      prevStatus = st.status;
+      const nx = x + PAPER_MM_PER_S * pxPerMm * dt;
+      grid(x, Math.min(W, nx + 14));
+      if (tpl !== 'beat_dot') {
+        const y = H * .62 - H * .42 * wave(phase);
+        ctx.strokeStyle = tok('--trace'); ctx.globalAlpha = st.status === 'holding' ? .4 : 1;
+        if (prevY !== null) { ctx.lineWidth = 2; ctx.lineJoin = 'round'; ctx.beginPath(); ctx.moveTo(x, prevY); ctx.lineTo(nx, y); ctx.stroke(); }
+        ctx.globalAlpha = 1; prevY = y;
+      }
+      x = nx; if (x >= W) { x = 0; prevY = null; }
+      render();
+    }
+    requestAnimationFrame(step);
+  }
+
+  // ---- report ----
+  let endedAt = 0;
+  function reportText() {            // the two text lines of the report; re-run when the language changes
+    const valid = windows.filter(w => w.hr != null);
+    const mean = valid.length && valid.length / windows.length >= .5 ? 1 : null;
+    $('repLen').textContent = L(`${Math.floor(endedAt)} s (${windows.length} windows × ${WINDOW_S} s)`, `${Math.floor(endedAt)} 秒（${windows.length} 個時段 × ${WINDOW_S} 秒）`);
+    $('repValid').textContent = `${valid.length} / ${windows.length}${mean == null && windows.length ? L(' · too few valid windows for a mean', ' · 有效時段太少，不計算平均') : ''}`;
+  }
+  function report() {
+    ended = true; endedAt = clock; $('end').disabled = true;
+    const rep = $('report'); rep.hidden = false;
+    const valid = windows.filter(w => w.hr != null);
+    const mean = valid.length && valid.length / windows.length >= .5 ? Math.round(valid.reduce((a, w) => a + w.hr, 0) / valid.length) : null;
+    $('repMean').textContent = mean ?? '—';
+    reportText();
+    const hrs = valid.map(w => w.hr), lo = Math.min(64, ...hrs) - 2, hi = Math.max(80, ...hrs) + 2;
+    const n = Math.max(windows.length, 1), stepX = Math.min(15, 270 / n);
+    $('dotsG').innerHTML = windows.map((w, i) => {
+      const cx = 28 + i * stepX;
+      return w.hr == null
+        ? `<circle cx="${cx}" cy="50" r="4" fill="none" stroke="var(--amber-600)" stroke-width="1.5"/>`
+        : `<circle cx="${cx}" cy="${92 - (w.hr - lo) / (hi - lo) * 80}" r="4" fill="var(--green-600)"/>`;
+    }).join('') + `<text x="0" y="16">${Math.round(hi)}</text><text x="0" y="95">${Math.round(lo)}</text>`;
+  }
+
+  // ---- wiring ----
+  document.querySelectorAll('[data-tpl]').forEach(b => b.onclick = () => {
+    tpl = b.dataset.tpl; document.querySelectorAll('[data-tpl]').forEach(o => o.setAttribute('aria-pressed', o === b));
+    grid(0, W); x = 0; prevY = null; render();
+  });
+  document.querySelectorAll('[data-st]').forEach(b => b.onclick = () => {
+    mode = b.dataset.st; document.querySelectorAll('[data-st]').forEach(o => o.setAttribute('aria-pressed', o === b));
+    if (mode === 'live') st = { status: 'live', hr: 72, held: 0, reason: null };
+    if (mode === 'holding') st = { status: 'holding', hr: 72, held: 0, reason: 'low_quality' };
+    if (mode === 'paused') st = { status: 'paused', hr: null, held: 0, reason: 'low_quality' };
+    render();
+  });
+  $('freeze').onclick = () => { frozen = !frozen; $('freeze').setAttribute('aria-pressed', frozen); };
+  $('end').onclick = report;
+
+  // ---- language switch: own toggle when opened alone; when embedded, program.html's switch reaches us
+  //      through the storage event (same origin, same localStorage key) ----
+  function setLang(lang, store) {
+    document.documentElement.dataset.lang = lang;
+    document.documentElement.lang = lang === 'zh' ? 'zh-Hant' : 'en';
+    const title = document.querySelector('title');
+    if (!title.dataset.en) title.dataset.en = title.textContent;
+    title.textContent = lang === 'zh' ? title.dataset.zh : title.dataset.en;
+    document.querySelectorAll('#langToggle button').forEach(b => b.setAttribute('aria-pressed', b.dataset.lang === lang));
+    if (store) { try { localStorage.setItem('aim_lang', lang); } catch (e) { /* private mode */ } }
+    render();
+    if (ended) reportText();
+  }
+  $('langToggle').addEventListener('click', e => { const b = e.target.closest('button[data-lang]'); if (b) setLang(b.dataset.lang, true); });
+  window.addEventListener('storage', e => { if (e.key === 'aim_lang') setLang(e.newValue === 'zh' ? 'zh' : 'en', false); });
+  new ResizeObserver(resize).observe(cv);
+  if (window.self !== window.top) { $('backLink').hidden = true; $('langToggle').hidden = true; }   // embedded in program.html, which has the switch
+  setLang(langOf(), false); resize(); requestAnimationFrame(step);
+})();
+</script>
+</body>
+</html>
