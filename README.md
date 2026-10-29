@@ -9,7 +9,7 @@ National Yang Ming Chiao Tung University. Bilingual (English / 繁體中文), de
 | | |
 |---|---|
 | **Live** | https://chen-mouchin.github.io/aimlab-site-preview/ |
-| **Deployed for AIMLab** | https://ai-in-medicine-lab.github.io/ |
+| **Deployed for AIMLab** | https://ai-in-medicine-lab.com/ |
 
 This repository holds the built static site. The source, the admin panel and the content server are
 kept in a private repository.
